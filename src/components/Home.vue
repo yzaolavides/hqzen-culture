@@ -1,12 +1,12 @@
 <template>
   <div class="hello">
-    <h1>TESTING GITHUB PAGES</h1>
+    <h1>TESTING GITHUB PAG</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   props: {
     msg: String
   }
