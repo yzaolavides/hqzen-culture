@@ -6,7 +6,7 @@
         >
             <nav class="left">
                 <a
-                    href="/"
+                    href="https://hqzen.com/"
                     title="HQZen.com"
                     class="logo"
                 >
@@ -32,7 +32,7 @@
                             About
                         </a>
                     </li>
-                    <li v-if="!isEmployerOrExecutive">
+                    <li>
                         <a
                             :href="{name: 'job-postings'}"
                             class="medium semibold"
@@ -186,7 +186,7 @@
                 <ul>
                     <li>
                         <a
-                            :href="{name: 'landing-page'}"
+                            href="https://hqzen.com/"
                             class="medium semibold"
                         >
                             Home

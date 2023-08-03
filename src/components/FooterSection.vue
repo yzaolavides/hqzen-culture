@@ -135,6 +135,21 @@
 <style lang="scss" scoped>
     @import "../scss/index";
 
+    .footer-bg {
+            position: absolute;
+            width: 100%;
+            top: auto;
+            bottom: 205px;
+
+            @media #{$mobile} {
+                bottom: 534px;
+            }
+        }
+
+    footer {
+            z-index: 1;
+        }
+
     // Type specs
     .t-tagline {
         font-size: 60px;

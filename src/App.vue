@@ -2,21 +2,18 @@
   <div id="app">
     <NavBar/>
     <CulturePage />
-    <FooterSection />
   </div>
 
 </template>
 
 <script>
 import CulturePage from './components/CulturePage.vue'
-import FooterSection from './components/FooterSection.vue'
 import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
     CulturePage,
-    FooterSection,
     NavBar,
   }
 }
@@ -33,7 +30,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  font-family: 'Inter';
-  font-size: 14px;
+
 }
 </style>
