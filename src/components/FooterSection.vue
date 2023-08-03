@@ -96,7 +96,7 @@
                     </li>
                     <li>
                         <a
-                            :href="sites.SCALEMA_URL"
+                            href="/"
                             target="_blank"
                             class="image-link-wrapper"
                         >
@@ -112,16 +112,12 @@
             </section>
         </article>
     </footer>
+
 </template>
 
 <script>
-    import { mapState } from 'vuex';
     export default {
         name: 'FooterSection',
-
-        computed: {
-            ...mapState('generics', ['sites']),
-        },
     };
 </script>
 
