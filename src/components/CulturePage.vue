@@ -1,11 +1,11 @@
 <template>
     <div class="about-page">
-      <img
+      <!-- <img
         src="../images/about-bg.png"
         alt="Culture Page Background"
         class="page-bg"
-      >
-    <h1>UNDER CONSTRUCTION </h1>
+      > -->
+    <h1 class="landing-header">UNDER CONSTRUCTION </h1>
   </div>
 </template>
 
@@ -13,7 +13,7 @@
 @import "../scss/index";
 
 .about-page {
-  // margin-top: 2rem;
+  margin: 9rem 0;
   padding: 0;
   background: #fff;
   color: $accent;
@@ -157,7 +157,7 @@
         }
 
         .page-bg {
-            // position: absolute;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
