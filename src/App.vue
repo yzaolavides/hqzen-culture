@@ -2,6 +2,7 @@
   <div id="app">
     <HomePage msg="Welcome to Your Vue.js App"/>
     <CulturePage />
+    <FooterSection />
   </div>
 
 </template>
@@ -9,12 +10,14 @@
 <script>
 import HomePage from './components/HomePage.vue'
 import CulturePage from './components/CulturePage.vue'
+import FooterSection from './components/FooterSection.vue'
 
 export default {
   name: 'App',
   components: {
     HomePage,
-    CulturePage
+    CulturePage,
+    FooterSection,
   }
 }
 </script>

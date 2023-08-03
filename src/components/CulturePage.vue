@@ -5,10 +5,10 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../scss/colors";
+@import "../scss/variables";
 
 .alert {
-  background: $primary;
+  background: $accent;
   color: #fff;
   padding: 1rem;
   font-size: 2rem;

@@ -1,0 +1,264 @@
+/////////////////////////////////
+//           COLORS            //
+/////////////////////////////////
+$black: #0C0D0E;
+$white: #FFFFFF;
+$accent: #008FF5;
+$primary: $black;
+$secondary: #40484F;
+$tertiary: #67747E;
+$quaternary: #DDE1E3;
+$border: $quaternary;
+$error: #ED2B42;
+$success: #06B169;
+$warning: #F5C024;
+$disabled: #A0A9B1;
+// Highlight colors
+$accent-highlight: #DBEDFD;
+$primary-highlight: #EBEDEF;
+$error-highlight: #F6DADD;
+$success-highlight: #D8FEEE;
+$warning-highlight: #FBF4DB;
+// Container colors
+$accent-container: #EDF7FE;
+$primary-container: #F4F5F6;
+$error-container: #FAEDEE;
+$success-container: #EBFEF6;
+$warning-container: #FDF9ED;
+$light-container: #FAFAFA;
+// Other colors
+$violet: #A052F4;
+$orange: #FA7F42;
+$pink: #FE25B1;
+$teal: #23BFCD;
+$indigo: #3974EA;
+$brown: #964B00;
+$red: $error;
+$green: $success;
+$yellow: $warning;
+$violet-highlight: #E7DAFA;
+$orange-highlight: #FAE5D9;
+$pink-highlight: #F8D8EF;
+$teal-highlight: #E1F6F8;
+$indigo-highlight: #DCE5F9;
+$brown-highlight: #EADBCC;
+$violet-container: #F3ECFD;
+$orange-container: #FCF2EC;
+$pink-container: #FCECF7;
+$teal-container: #F0FBFC;
+$indigo-container: #EEF2FC;
+$brown-container: #F7F1EB;
+
+// Landing colors
+$landing-bg: #F7FAFC;
+$landing-primary: #03183F;
+
+// Gray
+$gray: #aab5ba; // gray-70
+$darkest-gray: #2d3438; // gray-20
+$light-gray: #e2e6e8;
+$dark-gray: #72838c; // gray-50,
+$darker-gray: #49556B;
+/////////////////////////////////
+//       SHADOW VALUES         //
+/////////////////////////////////
+// generic
+$shadow-low:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 0px 1px rgba($primary, 0.1),
+    0px 2px 4px rgba($primary, 0.13);
+$shadow-mid:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 0px 2px rgba($primary, 0.1),
+    0px 4px 8px rgba($primary, 0.13);
+$shadow-high:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 1px 4px rgba($primary, 0.1),
+    0px 8px 16px rgba($primary, 0.13);
+// container-specific
+$shadow-card:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 0px 1px rgba($primary, 0.1),
+    0px 1px 4px rgba($primary, 0.1);
+$shadow-card-hover: $shadow-mid;
+$shadow-modal:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 4px 16px rgba($primary, 0.18),
+    0px 24px 64px rgba($primary, 0.22);
+$shadow-dropdown:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 0px 2px rgba($primary, 0.1),
+    0px 2px 6px rgba($primary, 0.15);
+$shadow-floating:
+    0px 0px 0px 1px rgba($quaternary, 0.5),
+    0px 24px 64px rgba($primary, 0.22),
+    0px 4px 16px rgba($primary, 0.18);
+/////////////////////////////////
+//       BORDER VALUES         //
+/////////////////////////////////
+$border-vertical: 0px -1px 0px $quaternary, inset 0px -1px 0px $quaternary;
+/////////////////////////////////
+//   SCREEN SIZES     //
+/////////////////////////////////
+$mobile-small: "screen and (max-width: 360px)";
+$mobile: "screen and (max-width: 576px)";
+$tablet: "screen and (max-width: 768px)";
+$desktop-small: "screen and (max-width: 1024px)";
+$desktop-medium: "screen and (max-width: 1200px)";
+$desktop-large: "screen and (min-width: 2560px)";
+/////////////////////////////////
+//        SPACING VALUES       //
+/////////////////////////////////
+$sp-144: 144px;
+$sp-100: 100px;
+$sp-80: 80px;
+$sp-64: 64px;
+$sp-60: 60px;
+$sp-56: 56px;
+$sp-48: 48px;
+$sp-44: 44px;
+$sp-40: 40px;
+$sp-36: 36px;
+$sp-32: 32px;
+$sp-28: 28px;
+$sp-24: 24px;
+$sp-20: 20px;
+$sp-16: 16px;
+$sp-12: 12px;
+$sp-8: 8px;
+$sp-4: 4px;
+/////////////////////////////////
+//        MISCELLANEOUS        //
+/////////////////////////////////
+// NOTE: Mixins should be defined in this section
+$corner-radius: 4px;
+@mixin scrollbar() {
+    &::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+        transition: .2s;
+        background: $quaternary;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $tertiary;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $secondary;
+    }
+    // Firefox
+    scrollbar-color: $tertiary transparent;
+    scrollbar-width: thin;
+}
+
+@mixin scrollbar-thin() {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        transition: .2s;
+        background: $quaternary;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $tertiary;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $secondary;
+    }
+    // Firefox
+    scrollbar-color: $tertiary transparent;
+    scrollbar-width: thin;
+}
+
+@mixin fading-scrollbar() {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color .2s;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        transition: background 0.3s;
+        background: $tertiary;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $secondary;
+    }
+
+    &:hover {
+        scrollbar-color: $tertiary transparent;
+    }
+
+    &:not(:hover)::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+}
+
+@mixin clear-list-formatting() {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+@mixin clamp-line($amount) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $amount;
+    -webkit-box-orient: vertical;
+}
+
+@mixin width-height($value) {
+    width: $value;
+    height: $value;
+}
+
+@mixin user-select($none) {
+    -moz-user-select: $none;
+    -webkit-user-drag: $none;
+    -ms-user-select: $none;
+    user-select: $none;
+}
+
+@mixin flex-align-center($direction: row) {
+    display: flex;
+    align-items: center;
+    @if $direction==column {
+        flex-direction: column;
+    }
+}
+
+@mixin flex-align-justify-center($direction: row) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if $direction==column {
+        flex-direction: column;
+    }
+}
+
+@mixin inline-flex-align-center($direction: row) {
+    display: inline-flex;
+    align-items: center;
+    @if $direction==column {
+        flex-direction: column;
+    }
+}
+
+@mixin inline-flex-align-justify-center($direction: row) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @if $direction==column {
+        flex-direction: column;
+    }
+}
+
+@mixin rotate($angle) {
+    -webkit-transform: rotate($angle);
+    -ms-transform: rotate($angle);
+    transform: rotate($angle);
+}
