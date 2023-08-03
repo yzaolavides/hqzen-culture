@@ -1,0 +1,39 @@
+.mdi:before,
+.material-icons {
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    padding: 1px;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 18px;
+
+    $increment: 4;
+    $i: 12;
+
+    @while $i <= 96 {
+        &.md-#{$i} {
+            font-size: #{$i}px;
+        }
+        $i: $i + $increment;
+    }
+
+    &.md-14 {
+        font-size: 14px;
+    }
+}

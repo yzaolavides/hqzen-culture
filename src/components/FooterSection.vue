@@ -31,7 +31,7 @@
                                 target="_blank"
                                 class="image-link-wrapper"
                             >
-                                <i class="mdi mdi-email"></i>
+                                <EmailIcon/>
                                 <span class="t-copy--footer">amanda@bposeats.com</span>
                             </p>
                         </li>
@@ -41,7 +41,7 @@
                                 target="_blank"
                                 class="image-link-wrapper"
                             >
-                                <i class="mdi mdi-phone"></i>
+                                <PhoneIcon/>
                                 <span class="t-copy--footer">+63 915 950 7909</span>
                             </p>
                         </li>
@@ -58,7 +58,7 @@
                                 target="_blank"
                                 class="image-link-wrapper"
                             >
-                                <i class="mdi mdi-help-circle-outline"></i>
+                                <HelpIcon />
                                 <span class="t-copy--footer">Help Center</span>
                             </a>
                         </li>
@@ -68,7 +68,7 @@
                                 target="_blank"
                                 class="image-link-wrapper"
                             >
-                                <i class="mdi mdi-information-outline"></i>
+                                <InfoIcon />
                                 <span class="t-copy--footer">Release Notes</span>
                             </a>
                         </li>
@@ -116,13 +116,24 @@
 </template>
 
 <script>
+    import PhoneIcon from 'vue-material-design-icons/Phone.vue'
+    import EmailIcon from 'vue-material-design-icons/Email.vue'
+    import HelpIcon from 'vue-material-design-icons/HelpCircleOutline.vue'
+    import InfoIcon from 'vue-material-design-icons/InformationOutline.vue'
+
     export default {
         name: 'FooterSection',
+        components: {
+            PhoneIcon,
+            EmailIcon,
+            HelpIcon,
+            InfoIcon,
+        },
     };
 </script>
 
 <style lang="scss" scoped>
-    @import "../scss/variables";
+    @import "../scss/index";
 
     // Type specs
     .t-tagline {

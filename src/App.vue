@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HomePage msg="Welcome to Your Vue.js App"/>
+    <NavBar/>
     <CulturePage />
     <FooterSection />
   </div>
@@ -8,27 +8,32 @@
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
 import CulturePage from './components/CulturePage.vue'
 import FooterSection from './components/FooterSection.vue'
+import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage,
     CulturePage,
     FooterSection,
+    NavBar,
   }
 }
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  top: 0;
+  left: 0;
+  -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 14px;
 }
 </style>
