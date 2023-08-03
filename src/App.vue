@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <HomePage msg="Welcome to Your Vue.js App"/>
+    <CulturePage />
   </div>
+
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import HomePage from './components/HomePage.vue'
+import CulturePage from './components/CulturePage.vue'
 
 export default {
   name: 'App',
   components: {
-    Home
+    HomePage,
+    CulturePage
   }
 }
 </script>
