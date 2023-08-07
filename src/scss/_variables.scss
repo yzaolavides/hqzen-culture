@@ -1,265 +1,166 @@
-/////////////////////////////////
-//           COLORS            //
-/////////////////////////////////
-$black: #0C0D0E;
-$white: #FFFFFF;
-$accent: #008FF5;
-$primary: $black;
-$secondary: #40484F;
-$tertiary: #67747E;
-$quaternary: #DDE1E3;
-$border: $quaternary;
-$error: #ED2B42;
-$success: #06B169;
-$warning: #F5C024;
-$disabled: #A0A9B1;
-// Highlight colors
-$accent-highlight: #DBEDFD;
-$primary-highlight: #EBEDEF;
-$error-highlight: #F6DADD;
-$success-highlight: #D8FEEE;
-$warning-highlight: #FBF4DB;
-// Container colors
-$accent-container: #EDF7FE;
-$primary-container: #F4F5F6;
-$error-container: #FAEDEE;
-$success-container: #EBFEF6;
-$warning-container: #FDF9ED;
-$light-container: #FAFAFA;
-// Other colors
-$violet: #A052F4;
-$orange: #FA7F42;
-$pink: #FE25B1;
-$teal: #23BFCD;
-$indigo: #3974EA;
-$brown: #964B00;
-$red: $error;
-$green: $success;
-$yellow: $warning;
-$violet-highlight: #E7DAFA;
-$orange-highlight: #FAE5D9;
-$pink-highlight: #F8D8EF;
-$teal-highlight: #E1F6F8;
-$indigo-highlight: #DCE5F9;
-$brown-highlight: #EADBCC;
-$violet-container: #F3ECFD;
-$orange-container: #FCF2EC;
-$pink-container: #FCECF7;
-$teal-container: #F0FBFC;
-$indigo-container: #EEF2FC;
-$brown-container: #F7F1EB;
-
-// Landing colors
-$landing-bg: #F7FAFC;
-$landing-primary: #03183F;
-
-// Gray
-$gray: #aab5ba; // gray-70
-$darkest-gray: #2d3438; // gray-20
-$light-gray: #e2e6e8;
-$dark-gray: #72838c; // gray-50,
-$darker-gray: #49556B;
-/////////////////////////////////
-//       SHADOW VALUES         //
-/////////////////////////////////
-// generic
-$shadow-low:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 0px 1px rgba($primary, 0.1),
-    0px 2px 4px rgba($primary, 0.13);
-$shadow-mid:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 0px 2px rgba($primary, 0.1),
-    0px 4px 8px rgba($primary, 0.13);
-$shadow-high:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 1px 4px rgba($primary, 0.1),
-    0px 8px 16px rgba($primary, 0.13);
-// container-specific
-$shadow-card:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 0px 1px rgba($primary, 0.1),
-    0px 1px 4px rgba($primary, 0.1);
-$shadow-card-hover: $shadow-mid;
-$shadow-modal:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 4px 16px rgba($primary, 0.18),
-    0px 24px 64px rgba($primary, 0.22);
-$shadow-dropdown:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 0px 2px rgba($primary, 0.1),
-    0px 2px 6px rgba($primary, 0.15);
-$shadow-floating:
-    0px 0px 0px 1px rgba($quaternary, 0.5),
-    0px 24px 64px rgba($primary, 0.22),
-    0px 4px 16px rgba($primary, 0.18);
-/////////////////////////////////
-//       BORDER VALUES         //
-/////////////////////////////////
-$border-vertical: 0px -1px 0px $quaternary, inset 0px -1px 0px $quaternary;
-/////////////////////////////////
-//   SCREEN SIZES     //
-/////////////////////////////////
-$mobile-small: "screen and (max-width: 360px)";
-$mobile: "screen and (max-width: 576px)";
-$tablet: "screen and (max-width: 768px)";
-$desktop-small: "screen and (max-width: 1024px)";
-$desktop-medium: "screen and (max-width: 1200px)";
-$desktop-large: "screen and (min-width: 2560px)";
-/////////////////////////////////
-//        SPACING VALUES       //
-/////////////////////////////////
-$sp-144: 144px;
-$sp-100: 100px;
-$sp-80: 80px;
-$sp-64: 64px;
-$sp-60: 60px;
-$sp-56: 56px;
-$sp-52: 52px;
-$sp-48: 48px;
-$sp-44: 44px;
-$sp-40: 40px;
-$sp-36: 36px;
-$sp-32: 32px;
-$sp-28: 28px;
-$sp-24: 24px;
-$sp-20: 20px;
-$sp-16: 16px;
-$sp-12: 12px;
-$sp-8: 8px;
-$sp-4: 4px;
-/////////////////////////////////
-//        MISCELLANEOUS        //
-/////////////////////////////////
-// NOTE: Mixins should be defined in this section
-$corner-radius: 4px;
-@mixin scrollbar() {
-    &::-webkit-scrollbar {
-        width: 12px;
-        height: 12px;
-        transition: .2s;
-        background: $quaternary;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: $tertiary;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-        background: $secondary;
-    }
-    // Firefox
-    scrollbar-color: $tertiary transparent;
-    scrollbar-width: thin;
-}
-
-@mixin scrollbar-thin() {
-    &::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-        transition: .2s;
-        background: $quaternary;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: $tertiary;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-        background: $secondary;
-    }
-    // Firefox
-    scrollbar-color: $tertiary transparent;
-    scrollbar-width: thin;
-}
-
-@mixin fading-scrollbar() {
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    transition: scrollbar-color .2s;
-
-    &::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        transition: background 0.3s;
-        background: $tertiary;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-        background: $secondary;
-    }
-
-    &:hover {
-        scrollbar-color: $tertiary transparent;
-    }
-
-    &:not(:hover)::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
-}
-
-@mixin clear-list-formatting() {
-    padding: 0;
-    margin: 0;
-    li {
-        list-style: none;
-    }
-}
-
-@mixin clamp-line($amount) {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: $amount;
-    -webkit-box-orient: vertical;
-}
-
-@mixin width-height($value) {
-    width: $value;
-    height: $value;
-}
-
-@mixin user-select($none) {
-    -moz-user-select: $none;
-    -webkit-user-drag: $none;
-    -ms-user-select: $none;
-    user-select: $none;
-}
-
-@mixin flex-align-center($direction: row) {
-    display: flex;
-    align-items: center;
-    @if $direction==column {
-        flex-direction: column;
-    }
-}
-
-@mixin flex-align-justify-center($direction: row) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @if $direction==column {
-        flex-direction: column;
-    }
-}
-
-@mixin inline-flex-align-center($direction: row) {
-    display: inline-flex;
-    align-items: center;
-    @if $direction==column {
-        flex-direction: column;
-    }
-}
-
-@mixin inline-flex-align-justify-center($direction: row) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    @if $direction==column {
-        flex-direction: column;
-    }
-}
-
-@mixin rotate($angle) {
-    -webkit-transform: rotate($angle);
-    -ms-transform: rotate($angle);
-    transform: rotate($angle);
-}
+ // fonts
+ $display-font: 'Inter', sans-serif;
+ $body-font: 'Inter', sans-serif;
+ $display-font-new: 'Inter', sans-serif;
+ 
+ // shades of gray
+ $black: #0b0d0e;
+ $cool-black: #08213B;
+ $darkest-gray: #2d3438; // gray-20
+ $darker-gray: #49556B;
+ $dark-gray: #72838c; // gray-50,
+ $gray: #aab5ba; // gray-70
+ $light-gray: #e2e6e8; // gray-90, use for border color
+ $lightest-gray: #f6f7f8; // gray-97
+ $white: white;
+ 
+ // color states
+ $primary-color: $black;
+ $secondary-color: $dark-gray;
+ $tertiary-color: $gray;
+ $accent-color: #31a3dd;
+ $border-color: $light-gray;
+ 
+ // shades of blue
+ $blue: $accent-color;
+ $light-blue: #cbe8f6;
+ $lighter-blue: #EFF8FC;
+ $dark-blue: #186c96;
+ 
+ // shades of green
+ $green: #09b66d;
+ $light-green: #b3fbdc;
+ $lighter-green: #EBF9F3;
+ $dark-green: #057646;
+ 
+ // shades of yellow
+ $yellow: #f5c023;
+ $light-yellow: #FDF4D7;
+ $dark-yellow: #ae8407;
+ $container-yellow: #FEFAED;
+ 
+ // shades of red
+ $red: #ef2d56;
+ $light-red: #fcdfe5;
+ $dark-red: #ab0d2e;
+ $container-red: #FDF3F8;
+ 
+ // shades of violet
+ $violet: #c04cfd;
+ $light-violet: #F5E3FF;
+ $dark-violet: #8b02d3;
+ 
+ // shades of orange
+ $orange: #f4a259;
+ $light-orange: #fce7d5;
+ $dark-orange: #ca660d;
+ $container-orange: #FEF7F2;
+ 
+ //color states
+ $blue-hover: #2294cd;
+ $blue-disabled: #afdaf0;
+ $blue-hover-semifilled: #dbeff9;
+ $red-hover: #d02348;
+ $red-disabled: #f6d3db;
+ $red-hover-semifilled: #fde1e7;
+ $green-hover: #08a361;
+ $green-disabled: #b1e4cf;
+ $green-hover-semifilled: #b3fbdd;
+ $yellow-hover: #e0ad14;
+ $yellow-disabled: #f6eac5;
+ $yellow-hover-semifilled: #fef6e1;
+ 
+ // these color variables below will be deprecated soon. use the new color variables above
+ $gray-5: #0b0d0e;
+ $gray-10: #161a1c;
+ $gray-15: #22272a;
+ $gray-20: #2d3438;
+ $gray-25: #394146;
+ $gray-30: #444f54;
+ $gray-35: #505c62;
+ $gray-37: #5f5f5f;
+ $gray-40: #5b6970;
+ $gray-45: #67767e;
+ $gray-50: #72838c;
+ $gray-55: #809097;
+ $gray-60: #8e9ca3;
+ $gray-65: #9ca8ae;
+ $gray-70: #aab5ba;
+ $gray-75: #b8c1c5;
+ $gray-80: #c6cdd1;
+ $gray-85: #d4dadc;
+ $gray-90: #e2e6e8;
+ $gray-95: #f0f2f3;
+ $gray-99: #fcfcfd;
+ $accent-color-dark: #337ab7;
+ $accent-color-light: #c6e5f5;
+ 
+ // screen sizes
+ $mobile-small: "screen and (max-width: 360px)";
+ $mobile: "screen and (max-width: 576px)";
+ $tablet: "screen and (max-width: 768px)";
+ $laptop: "screen and (max-width: 1024px)";
+ $laptop-medium: "screen and (max-width: 1200px)";
+ $laptop-large: "screen and (max-width: 1440px)";
+ 
+ // elevation (broad)
+ $elevation-low: 0px 0px 1px rgba($black, 0.1), 0px 2px 4px rgba($black, 0.13);
+ $elevation-mid: 0px 0px 2px rgba($black, 0.1), 0px 4px 8px rgba($black, 0.13);
+ $elevation-high: 0px 1px 4px rgba($black, 0.1), 0px 8px 16px rgba($black, 0.13);
+ $elevation-mid-high: 0px 2px 8px rgba($black, 0.1), 0px 16px 24px rgba($black, 0.13);
+ $elevation-very-high: 0px 4px 16px rgba($black, 0.18), 0px 24px 64px rgba($black, 0.22);
+ $elevation-modal: $elevation-very-high;
+ $elevation-blue-low: 0px 0px 1px rgba($blue, 0.3), 0px 2px 4px rgba($blue, 0.39);
+ $elevation-blue-mid: 0px 0px 2px rgba($blue, 0.3), 0px 4px 8px rgba($blue, 0.39);
+ $elevation-blue-high: 0px 1px 4px rgba($blue, 0.3), 0px 8px 16px rgba($blue, 0.39);
+ $elevation-blue-very-high: 0px 4px 16px rgba($blue, 0.54), 0px 24px 64px rgba($blue, 0.66);
+ $elevation-red-low: 0px 0px 1px rgba($red, 0.3), 0px 2px 4px rgba($red, 0.39);
+ $elevation-red-mid: 0px 0px 2px rgba($red, 0.3), 0px 4px 8px rgba($red, 0.39);
+ $elevation-red-high: 0px 1px 4px rgba($red, 0.3), 0px 8px 16px rgba($red, 0.39);
+ $elevation-red-very-high: 0px 4px 16px rgba($red, 0.54), 0px 24px 64px rgba($red, 0.66);
+ $elevation-green-low: 0px 0px 1px rgba($green, 0.3), 0px 2px 4px rgba($green, 0.39);
+ $elevation-green-mid: 0px 0px 2px rgba($green, 0.3), 0px 4px 8px rgba($green, 0.39);
+ $elevation-green-high: 0px 1px 4px rgba($green, 0.3), 0px 8px 16px rgba($green, 0.39);
+ $elevation-green-very-high: 0px 4px 16px rgba($green, 0.54), 0px 24px 64px rgba($green, 0.66);
+ $elevation-yellow-low: 0px 0px 1px rgba($yellow, 0.3), 0px 2px 4px rgba($yellow, 0.39);
+ $elevation-yellow-mid: 0px 0px 2px rgba($yellow, 0.3), 0px 4px 8px rgba($yellow, 0.39);
+ $elevation-yellow-high: 0px 1px 4px rgba($yellow, 0.3), 0px 8px 16px rgba($yellow, 0.39);
+ $elevation-yellow-very-high: 0px 4px 16px rgba($yellow, 0.54), 0px 24px 64px rgba($yellow, 0.66);
+ 
+ // these elevation variables will be deprecated soon. use the new elevation values;
+ $card-shadow: 0px 2px 10px rgba($gray-20, .1);
+ $card-shadow-hover: 0px 4px 25px rgba($gray-20, 0.15);
+ $card-shadow-blue: 0px 2px 10px rgba($accent-color, .5);
+ $card-shadow-hover-blue: 0px 4px 20px rgba($accent-color, .75);
+ $mini-card-shadow: 0px 2px 4px rgba($gray-30, 0.1);
+ $nav-shadow: 0px 2px 8px rgba($gray-50, 0.5);
+ $button-shadow-hover: 0 0px 5px rgba($gray-20, 0.5);
+ $button-shadow-active: 0 0px 10px rgba($gray-20, 0.5);
+ $input-text-shadow-hover: 0 0 4px rgba($light-blue, 0.5);
+ $modal-shadow: 0px 4px 75px rgba($gray-25, 0.5);
+ $switch-shadow: 0px 2px 10px rgba($gray-25, .25);
+ $text-shadow: 0px 1px 8px rgba($gray-25, 0.5);
+ $dropdown-shadow: 0px 2px 4px rgba($gray-20, 0.1);
+ $avatar-shadow: 0px 4px 10px rgba($gray-20, .25);
+ $subpanel-shadow: 0px 1px 1px rgba($gray-20, .1);
+ $choose-avatar-selected: 0px 0px 0px 4px $accent-color;
+ $choose-avatar-hover: 0px 0px 0px 2px $accent-color;
+ $shadow-elevation-high: 0px 6px 12px rgba($gray-80, .65);
+ $shadow-elevation-high-hover: 0px 12px 18px rgba($gray-80, .5);
+ $shadow-elevation-medium: 0px 4px 6px rgba($gray-80, .5);
+ $shadow-elevation-medium-hover: 0px 10px 12px rgba($gray-80, .4);
+ $shadow-elevation-low: 0px 2px 2px rgba($gray-80, .5);
+ $shadow-elevation-low-hover: 0px 6px 6px rgba($gray-80, .4);
+ 
+ // elevation (common) (use these for cards, and dropdowns)
+ $elevation-default: $elevation-low;
+ $elevation-hover: $elevation-mid;
+ $elevation-blue-default: $elevation-blue-low;
+ $elevation-blue-hover: $elevation-blue-mid;
+ $elevation-red-default: $elevation-red-low;
+ $eleavtion-red-hover: $elevation-red-mid;
+ $elevation-green-default: $elevation-green-low;
+ $elevation-green-hover: $elevation-green-mid;
+ $elevation-yellow-default: $elevation-yellow-low;
+ $elevation-yellow-hover: $elevation-yellow-mid;
+ 

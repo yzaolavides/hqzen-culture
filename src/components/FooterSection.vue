@@ -120,6 +120,7 @@
     import EmailIcon from 'vue-material-design-icons/Email.vue'
     import HelpIcon from 'vue-material-design-icons/HelpCircleOutline.vue'
     import InfoIcon from 'vue-material-design-icons/InformationOutline.vue'
+    
 
     export default {
         name: 'FooterSection',

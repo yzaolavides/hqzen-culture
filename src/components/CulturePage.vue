@@ -2,26 +2,56 @@
   <div :class="['landing', scrollHandler ? 'mobile-menu-on' : '']">
     <main>
       <section class="hero">
-        <img 
-            src="../images/hero-background.png"
-            class="hero__background"
-            />
-        <p class="section__subtitle">About Us</p>
-        <h1 class="section__title">Meet the 
-          <span class="emphasis">Development Team</span>
-        </h1>
-
-        <div class="hero__graphic">
-          <img
-              src="../images/temp-team.png"
-              alt="HQZen Team"
-              class="hero-image"
-          >
-        </div>
+            <div class="hero__left">
+                <p class="section__subtitle">About Us</p>
+                <h1 class="section__title">
+                    Meet the 
+                    <br><span class="emphasis">Development Team</span>
+                </h1>
+                <p class="section__copy">
+                    Get to know the faces behind our projects and witness our commitment to 
+                    pushing boundaries and embracing progress.
+                </p>
+                <a
+                    href="https://hqzen.com/job-postings/"
+                    class="action"
+                >
+                    Join the team!
+                </a>
+            </div>
+        
+            <div class="hero__right">
+            <img
+                src="../images/hero.png"
+                alt="HQZen Hero"
+                class="hero-image"
+            >
+            </div>
       </section>
-
-      <section>
-          
+      <section class="values">
+            <div class="values__header">
+            <p class="section__subtitle white">Our Values</p>
+            <h1 class="section__title white">
+                What Drives Us
+            </h1>
+            </div>
+            <div class="values__wrapper">
+                <div class="values__left white">
+                    We are driven by our dedication to excellence, 
+                    growth and passion for technological innovation.
+                </div>
+                <div class="values__center">
+                    <img
+                    src="../images/values-team.png"
+                    alt="HQZen Team"
+                    class="team-image"
+                >
+                </div>
+                <div class="values__right white">
+                    We aim to create products that leave a lasting impact, 
+                    and shape the future of tech in the BPO industry.
+                </div>
+            </div>
       </section>
 
     </main>
@@ -45,11 +75,6 @@ export default {
 <style lang="scss" scoped>
   @import "../scss/index";
 
-  $landing-heading: #03183F;
-  $l-blue: $accent;
-  $accent-solid: #008FF5;
-  $l-light-blue: #EEF7FE;
-
     .landing {
         &.mobile-menu-on {
             overflow: hidden;
@@ -63,107 +88,187 @@ export default {
             font-size: $sp-16;
             text-transform: uppercase;
             color: $tertiary;
+            line-height: 100%;
+            margin-bottom: $sp-24;
 
             @media #{$tablet} {
                 font-size: 12px;
+                text-align: center;
             }
         }
       
-      &__title {
-            font-weight: 800;
-            font-size: $sp-52;
-            color: $landing-primary;
+        &__title {
+                font-weight: 800;
+                font-size: $sp-52;
+                color: $landing-primary;
+                line-height: 100%;
+                margin-bottom: 24px;
+
+                @media #{$tablet} {
+                    font-size: $sp-24;
+                    text-align: center;
+                }
+
+                & > .emphasis {
+                color: $accent;
+                font-weight: 800;
+                font-size: $sp-52;
+                margin-bottom: 24px;
+                @media #{$tablet} {
+                    font-size: $sp-24;
+                    text-align: center;
+                }
+
+                }
+            }
+
+
+        &__copy{
+            font-weight: 400;
+            font-size: $sp-20;
+            color: $secondary;
+            line-height: 150%;
+            margin-bottom: 24px;
 
             @media #{$tablet} {
-                font-size: 24px;
-            }
-            & > .emphasis {
-              color: $accent;
-              font-weight: 800;
-              font-size: $sp-52;
-              @media #{$tablet} {
-                  font-size: 24px;
-              }
-
+                font-size: $sp-16;
+                text-align: center;
             }
         }
     }
 
     .hero {
-        @include flex-align-justify-center(column);
-        gap: 24px;
-        margin-top: 72px;
-        text-align: center;
+        background-image: url("../images/hero-background.png");
+        background-size: cover;
 
-        @media #{$tablet} {
-            padding: 80px 16px;
+        height:100vh;
+        width:100%;
+        padding: $sp-80;
+        margin-top: $sp-64;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__left{
+            width:572px;  
         }
 
-        &__background {
-            width: 100%;
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-            user-select: none;
+        &__right{
+            align-self: flex-end;
         }
 
-        &__graphic {
+        &__right img{
             @include flex-align-center(column);
-            width: calc(100vw * 0.55);
-            height: calc(100vw * 0.33);
-            margin-top: 20px;
-
-            @media #{$desktop-small} {
-                width: calc(100vw * 0.95);
-                height: calc(100vw * 0.56);
-            }
-
+            height: calc(100vw * 0.45);
+            width: calc(100vw * 0.40);
+            vertical-align: middle;
         }
+    }
+
+    .values{
+        background-image: url("../images/values-bg.png");
+        background-size: cover;
+        height:100vh;
+        width:100%;
+        padding: $sp-80;
+        justify-content: space-between;
+        
+
+        &__header{
+            @include flex-align-center(column);
+            margin-bottom: $sp-24;
+        }
+
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media #{$tablet} {
+                display: block;
+            }
+        }
+
+        &__left{
+            font-size:$sp-32;
+            width:268px;
+            text-align: left;
+            line-height: 150%;
+
+            @media #{$tablet} {
+                font-size: $sp-16;
+                text-align: center;
+            }
+        }
+
+        &__center img{
+            @include flex-align-center(column);
+            height: calc(100vw * 0.30);
+            width: calc(100vw * 0.40);
+            vertical-align: middle;
+        }
+
+        &__right{
+            font-size:$sp-32;
+            width:268px;
+            text-align: right;
+            line-height: 150%;
+
+            @media #{$tablet} {
+                font-size: $sp-16;
+                text-align: center;
+            }
+        }
+
     }
 
 
     section {
-        @include flex-align-center(column);
-        gap: 52px;
-        padding: 80px 140px;
 
-        .header {
-            @include flex-align-center(column);
-            gap: 20px;
-            text-align: center;
+        .action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $accent;
+            padding: 12px 24px !important;
+            color: $white;
 
-            .white {
+            border-radius:64px;
+            height: 48px;
+            width:148px;
+            
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color .2s ease-out;
+            border-radius: 48px;
+            line-height: 1.5;
+            cursor: pointer;
+
+            @media #{$tablet} {
+                padding: 8px 12px !important;
+                font-size: 12px;
+                height: 44px;
+                width: 132px;
+                align-self: center;
+            }
+
+            &:hover {
+                background-color: #0374C7;
                 color: $white;
             }
 
-            h1 {
-                font-weight: 600;
-                font-size: 32px;
-                color: $landing-heading;
-            }
-
-            &__actions {
-                display: flex;
-                gap: 12px;
-            }
-        }
-
-        .content {
-            @include flex-align-center(column);
-            gap: 20px;
-            width: fit-content;
-        }
-
-        .content {
-            @include flex-align-center(column);
-            gap: 20px;
-            width: fit-content;
+            
         }
 
         p {
             font-size: 20px;
             line-height: 150%;
             color: $secondary;
+        }
+
+        .white {
+            color:$white;
         }
 
         @media #{$tablet} {
@@ -173,12 +278,12 @@ export default {
     }
 
     ::v-deep button.l-primary {
-        background: $accent-solid;
+        background: $accent;
         color: $white;
         border: none;
 
         &:hover {
-            background: darken($accent-solid, 7.5%);
+            background: darken($accent, 7.5%);
         }
 
         p {
@@ -189,24 +294,4 @@ export default {
         }
     }
 
-    input {
-        height: 50px;
-        width: 370px;
-        padding: 0px 12px;
-        outline: none;
-        font-size: 14px;
-        color: $primary;
-        border-radius: 4px;
-        border: 1px solid $quaternary;
-        transition-duration: .2s;
-
-        &:hover {
-            border-color: $gray;
-        }
-
-        &:focus {
-            border-color: $accent;
-            box-shadow: 0 0 0 4px rgba($white, .25);
-        }
-    }
 </style>

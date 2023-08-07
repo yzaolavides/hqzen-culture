@@ -18,7 +18,7 @@
                 <ul class="actions">
                     <li>
                         <a
-                            href="/"
+                            href="https://hqzen.com/"
                             class="medium semibold"
                         >
                             Home
@@ -26,15 +26,15 @@
                     </li>
                     <li>
                         <a
-                            href="/"
+                            href="https://yzaolavides.github.io/hqzen-culture"
                             class="medium semibold"
                         >
-                            About
+                            Culture
                         </a>
                     </li>
                     <li>
                         <a
-                            :href="{name: 'job-postings'}"
+                            href="https://hqzen.com/job-postings/"
                             class="medium semibold"
                         >
                             Look for Jobs
@@ -66,16 +66,16 @@
                     class="actions"
                 >
                     <li>
-                        <router-link
-                            :to="{name: 'get-started'}"
+                        <a
+                            href="https://hqzen.com/signup/get-started"
                             class="action"
                         >
                             Get Started
-                        </router-link>
+                        </a>
                     </li>
                     <li>
                         <a
-                            :href="{name: 'signin'}"
+                            href="https://hqzen.com/signin"
                         >
                             <span class="medium semibold">
                                 Sign in
@@ -108,7 +108,7 @@
                 class="list-dropdown"
                 @click="toggleProductList = !toggleProductList"
             >
-                <router-link :to="{name:'release-notes'}">
+                <a href="https://hqzen.com/release-notes">
                     <div class="list-dropdown__item">
                         <p class="p-h3">
                             Desktop App
@@ -122,7 +122,7 @@
                             alt="Desktop App Graphic"
                         >
                     </div>
-                </router-link>
+                </a>
                 <a
                     href="https://play.google.com/store/apps/details?id=com.bposeats.applybpo"
                     target="__blank"
@@ -147,7 +147,7 @@
                 class="list-dropdown"
                 @click="toggleHelpList = !toggleHelpList"
             >
-                <router-link :to="{name:'operations-form'}">
+                <a href="https://hqzen.com/concerns">
                     <div class="list-dropdown__item">
                         <p class="p-h3">
                             Concerns
@@ -161,8 +161,8 @@
                             alt="Concerns Graphic"
                         >
                     </div>
-                </router-link>
-                <router-link :to="{name:'help-center'}">
+                </a>
+                <a href="https://hqzen.com/help-center/">
                     <div class="list-dropdown__item">
                         <p class="p-h3">
                             Help Center
@@ -176,7 +176,7 @@
                             alt="Help Center Graphic"
                         >
                     </div>
-                </router-link>
+                </a>
             </nav>
             <nav
                 v-if="breakpoint == 'mobile' || breakpoint == 'tablet' && breakpoint != 'null'"
@@ -194,15 +194,15 @@
                     </li>
                     <li>
                         <a
-                            href="/"
+                            href="https://yzaolavides.github.io/hqzen-culture"
                             class="medium semibold"
                         >
-                            About
+                            Culture
                         </a>
                     </li>
                     <li>
                         <a
-                            :href="{name: 'job-postings'}"
+                            href="https://hqzen.com/job-postings/"
                             class="medium semibold"
                         >
                             Look for Jobs
@@ -223,7 +223,7 @@
                             class="list"
                             :class="{'show': toggleProductList}"
                         >
-                            <a :href="{name:'release-notes'}">
+                            <a href="https://hqzen.com/release-notes">
                                 <div class="list__item">
                                     <p class="p-h3">
                                         Desktop Application
@@ -277,7 +277,7 @@
                             class="list"
                             :class="{'show': toggleHelpList}"
                         >
-                            <a :href="{name:'operations-form'}">
+                            <a href="https://hqzen.com/concerns">
                                 <div class="list__item">
                                     <p class="p-h3">
                                         Concerns
@@ -293,7 +293,7 @@
                                     >
                                 </div>
                             </a>
-                            <a :href="{name:'help-center'}">
+                            <a href="https://hqzen.com/help-center/">
                                 <div class="list__item">
                                     <p class="p-h3">
                                         Help Center
@@ -436,7 +436,7 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "../scss/variables";
+    @import "../scss/bpo-variables";
     @import "../scss/reset";
 
     a {
@@ -739,7 +739,7 @@
         position: relative;
         display: inline-block;
         z-index: 2;
-        float: right;
+        // float: right;
         height: 24px;
         width: 24px;
         cursor: pointer;
