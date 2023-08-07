@@ -178,6 +178,10 @@ export default {
                 width: calc(100vw * 0.55);
             }
         }
+
+        @media #{$tablet} {
+            padding:0 80px;
+        }
     }
 
     .mission{
