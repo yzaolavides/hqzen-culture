@@ -2,6 +2,7 @@
   <div :class="['landing', scrollHandler ? 'mobile-menu-on' : '']">
     <main>
       <section class="hero">
+        <div class="wrapper">
             <div class="hero__left">
                 <p class="section__subtitle">About Us</p>
                 <h1 class="section__title">
@@ -12,6 +13,7 @@
                     Get to know the faces behind our projects and witness our commitment to 
                     pushing boundaries and embracing progress.
                 </p>
+
                 <a
                     href="https://hqzen.com/job-postings/"
                     class="action"
@@ -27,27 +29,28 @@
                 class="hero-image"
             >
             </div>
+        </div>
       </section>
-      <section class="values">
-            <div class="values__header">
-            <p class="section__subtitle white">Our Values</p>
+      <section class="mission">
+            <div class="mission__header">
+            <p class="section__subtitle white">Our mission and vision</p>
             <h1 class="section__title white">
                 What Drives Us
             </h1>
             </div>
-            <div class="values__wrapper">
-                <div class="values__left white">
+            <div class="wrapper">
+                <div class="mission__left white">
                     We are driven by our dedication to excellence, 
                     growth and passion for technological innovation.
                 </div>
-                <div class="values__center">
+                <div class="mission__center">
                     <img
-                    src="../images/values-team.png"
+                    src="../images/mission-team.png"
                     alt="HQZen Team"
                     class="team-image"
                 >
                 </div>
-                <div class="values__right white">
+                <div class="mission__right white">
                     We aim to create products that leave a lasting impact, 
                     and shape the future of tech in the BPO industry.
                 </div>
@@ -127,6 +130,7 @@ export default {
             font-weight: 400;
             font-size: $sp-20;
             color: $secondary;
+            letter-spacing: -0.1px;
             line-height: 150%;
             margin-bottom: 24px;
 
@@ -143,30 +147,41 @@ export default {
 
         height:100vh;
         width:100%;
-        padding: $sp-80;
-        margin-top: $sp-64;
+        padding: $sp-36 $sp-80;
+        margin-top: $sp-32;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        // align-self: flex-end;
 
         &__left{
-            width:572px;  
+            max-width:572px;  
         }
 
         &__right{
-            align-self: flex-end;
+            margin-left:$sp-100;
+
+            @media #{$tablet} {
+                margin-left: $sp-20;
+                margin-top: $sp-20;
+            }
         }
 
         &__right img{
             @include flex-align-center(column);
-            height: calc(100vw * 0.45);
-            width: calc(100vw * 0.40);
+            height: calc(100vw * 0.40);
+            width: calc(100vw * 0.35);
             vertical-align: middle;
+
+            @media #{$tablet} {
+                height: calc(100vw * 0.60);
+                width: calc(100vw * 0.55);
+            }
         }
     }
 
-    .values{
-        background-image: url("../images/values-bg.png");
+    .mission{
+        background-image: url("../images/mission-bg.png");
         background-size: cover;
         height:100vh;
         width:100%;
@@ -176,22 +191,19 @@ export default {
 
         &__header{
             @include flex-align-center(column);
-            margin-bottom: $sp-24;
-        }
-
-        &__wrapper{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
 
             @media #{$tablet} {
-                display: block;
+                margin-bottom: $sp-8;
+            }
+
+            h1 {
+                margin-bottom:0
             }
         }
 
         &__left{
             font-size:$sp-32;
-            width:268px;
+            // max-width:268px;
             text-align: left;
             line-height: 150%;
 
@@ -206,11 +218,18 @@ export default {
             height: calc(100vw * 0.30);
             width: calc(100vw * 0.40);
             vertical-align: middle;
+            align-content: center;
+            margin:$sp-40;
+
+            @media #{$tablet} {
+                margin: 10px 0;
+                height: calc(100vw * 0.65);
+                width: calc(100vw * 0.90);
+            }
         }
 
         &__right{
             font-size:$sp-32;
-            width:268px;
             text-align: right;
             line-height: 150%;
 
@@ -220,6 +239,9 @@ export default {
             }
         }
 
+        @media #{$tablet} {
+            padding: 80px 20px;
+        }
     }
 
 
@@ -232,7 +254,7 @@ export default {
             background-color: $accent;
             padding: 12px 24px !important;
             color: $white;
-
+            margin-top:$sp-48;
             border-radius:64px;
             height: 48px;
             width:148px;
@@ -246,11 +268,12 @@ export default {
             cursor: pointer;
 
             @media #{$tablet} {
+
+                margin: 24px 88px 24px 104px;
                 padding: 8px 12px !important;
                 font-size: 12px;
                 height: 44px;
                 width: 132px;
-                align-self: center;
             }
 
             &:hover {
@@ -274,6 +297,16 @@ export default {
         @media #{$tablet} {
             gap: 40px;
             padding: 80px 30px;
+        }
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media #{$tablet} {
+                display: block;
+            }
         }
     }
 
