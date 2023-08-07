@@ -108,7 +108,7 @@ export default {
                 margin-bottom: 24px;
 
                 @media #{$tablet} {
-                    font-size: $sp-24;
+                    font-size: $sp-28;
                     text-align: center;
                 }
 
@@ -118,7 +118,7 @@ export default {
                 font-size: $sp-52;
                 margin-bottom: 24px;
                 @media #{$tablet} {
-                    font-size: $sp-24;
+                    font-size: $sp-28;
                     text-align: center;
                 }
 
@@ -135,7 +135,7 @@ export default {
             margin-bottom: 24px;
 
             @media #{$tablet} {
-                font-size: $sp-16;
+                font-size: $sp-12;
                 text-align: center;
             }
         }
@@ -152,7 +152,6 @@ export default {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // align-self: flex-end;
 
         &__left{
             max-width:572px;  
@@ -162,8 +161,8 @@ export default {
             margin-left:$sp-100;
 
             @media #{$tablet} {
-                margin-left: $sp-20;
-                margin-top: $sp-20;
+                margin-left: $sp-48;
+                margin-top: $sp-40;
             }
         }
 
@@ -180,24 +179,24 @@ export default {
         }
 
         @media #{$tablet} {
-            padding:0 32px;
+            padding:8px 32px;
         }
     }
 
     .mission{
         background-image: url("../images/mission-bg.png");
         background-size: cover;
-        height:100vh;
+        height:100%;
         width:100%;
         padding: $sp-80;
         justify-content: space-between;
+        align-items: center;
         
-
         &__header{
             @include flex-align-center(column);
 
             @media #{$tablet} {
-                margin-bottom: $sp-8;
+                margin: $sp-12;
             }
 
             h1 {
@@ -207,12 +206,12 @@ export default {
 
         &__left{
             font-size:$sp-32;
-            // max-width:268px;
             text-align: left;
             line-height: 150%;
 
             @media #{$tablet} {
-                font-size: $sp-16;
+                font-size: $sp-12;
+
                 text-align: center;
             }
         }
@@ -238,7 +237,7 @@ export default {
             line-height: 150%;
 
             @media #{$tablet} {
-                font-size: $sp-16;
+                font-size: $sp-12;
                 text-align: center;
             }
         }
@@ -272,8 +271,7 @@ export default {
             cursor: pointer;
 
             @media #{$tablet} {
-
-                margin: 24px 88px 24px 104px;
+                margin: 16px 88px;
                 padding: 8px 12px !important;
                 font-size: 12px;
                 height: 44px;
