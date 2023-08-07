@@ -180,7 +180,7 @@ export default {
         }
 
         @media #{$tablet} {
-            padding:0 80px;
+            padding:0 32px;
         }
     }
 
