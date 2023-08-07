@@ -23,20 +23,20 @@
             </div>
         
             <div class="hero__right">
-            <img
-                src="../images/hero.png"
-                alt="HQZen Hero"
-                class="hero-image"
-            >
+                <img
+                    src="../images/hero.png"
+                    alt="HQZen Hero"
+                    class="hero-image"
+                >
             </div>
         </div>
       </section>
       <section class="mission">
             <div class="mission__header">
-            <p class="section__subtitle white">Our mission and vision</p>
-            <h1 class="section__title white">
-                What Drives Us
-            </h1>
+                <p class="section__subtitle white">Our mission and vision</p>
+                <h1 class="section__title white">
+                    What Drives Us
+                </h1>
             </div>
             <div class="wrapper">
                 <div class="mission__left white">
@@ -55,6 +55,39 @@
                     and shape the future of tech in the BPO industry.
                 </div>
             </div>
+      </section>
+      <section class="values">
+        <div class="values__header">
+            <p class="section__subtitle">Our values</p>
+            <h1 class="section__title">
+                Code We Work By
+            </h1>
+        </div>
+        
+        <ul>
+            <li> 
+                <!-- <img
+                    src="../images/collaboration.gif"
+                    alt="Collaboration"
+                    class="collab-image"
+                > -->
+                <h3>Collaboration</h3>
+                <p>Be open to everyone’s thoughts and ideas.</p>
+            </li>
+            <li> 
+                <h3>Growth</h3>
+                <p>Cultivate a culture of continuous learning.</p>
+            </li>
+            <li> 
+                <h3>Innovation</h3>
+                <p>Foster a future-focused mindset.</p>
+            </li>
+            <li> 
+                <h3>Collaboration</h3>
+                <p>Proactive sharing ensures informed decisions.</p>
+            </li>
+        </ul>
+
       </section>
 
     </main>
@@ -110,6 +143,7 @@ export default {
                 @media #{$tablet} {
                     font-size: $sp-28;
                     text-align: center;
+                    margin-bottom: 16px;
                 }
 
                 & > .emphasis {
@@ -120,6 +154,7 @@ export default {
                 @media #{$tablet} {
                     font-size: $sp-28;
                     text-align: center;
+                    margin-bottom: 16px;
                 }
 
                 }
@@ -135,8 +170,9 @@ export default {
             margin-bottom: 24px;
 
             @media #{$tablet} {
-                font-size: $sp-12;
+                font-size: $sp-16;
                 text-align: center;
+                margin-bottom: 16px;
             }
         }
     }
@@ -144,30 +180,38 @@ export default {
     .hero {
         background-image: url("../images/hero-background.png");
         background-size: cover;
-
+        
         height:100vh;
         width:100%;
         padding: $sp-36 $sp-80;
-        margin-top: $sp-32;
+        margin-top: $sp-64;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         &__left{
-            max-width:572px;  
+            max-width:572px;
+
+            @media #{$tablet} {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         &__right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-left:$sp-100;
 
             @media #{$tablet} {
-                margin-left: $sp-48;
-                margin-top: $sp-40;
+                margin-left: 0;
             }
         }
 
         &__right img{
-            @include flex-align-center(column);
             height: calc(100vw * 0.40);
             width: calc(100vw * 0.35);
             vertical-align: middle;
@@ -186,7 +230,7 @@ export default {
     .mission{
         background-image: url("../images/mission-bg.png");
         background-size: cover;
-        height:100%;
+        height:100;
         width:100%;
         padding: $sp-80;
         justify-content: space-between;
@@ -210,8 +254,7 @@ export default {
             line-height: 150%;
 
             @media #{$tablet} {
-                font-size: $sp-12;
-
+                font-size: $sp-16;
                 text-align: center;
             }
         }
@@ -237,7 +280,7 @@ export default {
             line-height: 150%;
 
             @media #{$tablet} {
-                font-size: $sp-12;
+                font-size: $sp-16;
                 text-align: center;
             }
         }
@@ -247,13 +290,71 @@ export default {
         }
     }
 
+    .values {
+        background-color: $accent-container;
+        height: 100%;
+        width: 100%;
+        padding: $sp-80;
+        justify-content: space-between;
+        align-items: center;
+
+        &__header{
+            text-align: center;
+            margin-bottom: $sp-40;
+
+            @media #{$tablet} {
+                margin: $sp-28;
+            }
+            
+            h1 {
+                margin-bottom:0
+            }
+        }
+
+        > ul {
+            display: grid;
+            list-style-type: none;
+            grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+            grid-gap: 2rem;
+
+            li img{
+                display:block;
+                height: calc(100vw * 0.1);
+                width: calc(100vw * 0.1);
+            }
+
+            h3 {
+            font-size:$sp-32;
+            text-transform: uppercase;
+            color:$accent;
+            text-align: center;
+            font-weight: 900;
+
+                @media #{$tablet} {
+                font-size:$sp-20;
+                }
+            }
+
+            p {
+                font-size: $sp-20;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -1px;
+                text-align: center;
+
+                @media #{$tablet} {
+                font-size:$sp-16;
+                }
+            }
+        }
+
+        
+    }
 
     section {
 
         .action {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: $accent;
             padding: 12px 24px !important;
             color: $white;
@@ -262,7 +363,7 @@ export default {
             height: 48px;
             width:148px;
             
-            font-size: 14px;
+            font-size: $sp-16;
             font-weight: 700;
             text-decoration: none;
             transition: background-color .2s ease-out;
@@ -271,9 +372,12 @@ export default {
             cursor: pointer;
 
             @media #{$tablet} {
-                margin: 16px 88px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 16px 0;
                 padding: 8px 12px !important;
-                font-size: 12px;
+                font-size: $sp-12;
                 height: 44px;
                 width: 132px;
             }
@@ -309,23 +413,6 @@ export default {
             @media #{$tablet} {
                 display: block;
             }
-        }
-    }
-
-    ::v-deep button.l-primary {
-        background: $accent;
-        color: $white;
-        border: none;
-
-        &:hover {
-            background: darken($accent, 7.5%);
-        }
-
-        p {
-            font-size: 16px;
-            color: $white;
-            font-weight: 700;
-            width: 100%;
         }
     }
 
