@@ -71,25 +71,60 @@
                     alt="Collaboration"
                     class="collab-image"
                 > -->
+                <CollabIcon />
                 <h3>Collaboration</h3>
                 <p>Be open to everyone’s thoughts and ideas.</p>
             </li>
             <li> 
+                <GrowthIcon />
                 <h3>Growth</h3>
                 <p>Cultivate a culture of continuous learning.</p>
             </li>
-            <li> 
+            <li>
+                <InnovationIcon />
                 <h3>Innovation</h3>
                 <p>Foster a future-focused mindset.</p>
             </li>
-            <li> 
+            <li>
+                <CommunicationIcon />
                 <h3>Collaboration</h3>
                 <p>Proactive sharing ensures informed decisions.</p>
             </li>
         </ul>
 
       </section>
+      <section class="team">
 
+      </section>
+
+      <section class="join">
+        <div class="wrapper">
+            <div class="join__left">
+                <h1 class="section__title white">
+                    Ready to join the team?
+                </h1>
+                <p class="section__copy white">
+                    We're looking for passionate individuals 
+                    who are eager to make an impact and contribute to our tech!
+                </p>
+
+                <a
+                    href="https://hqzen.com/job-postings/"
+                    class="action reverse"
+                >
+                    Let's go!
+                </a>
+            </div>
+        
+            <div class="join__right">
+                <img
+                    src="../images/join.png"
+                    alt="HQZen Team"
+                    class="join-the-team-image"
+                >
+            </div>
+        </div>
+      </section>
     </main>
     <FooterSection />
   </div>
@@ -97,11 +132,20 @@
 
 <script>
 import FooterSection from './FooterSection.vue'
+import CollabIcon from '../components/LottieIcons/CollaborationIcon.vue'
+import GrowthIcon from '../components/LottieIcons/GrowthIcon.vue'
+import InnovationIcon from '../components/LottieIcons/InnovationIcon.vue'
+import CommunicationIcon from '../components/LottieIcons/CommunicationIcon.vue'
+
 
 export default {
   name: 'CulturePage',
   components: {
     FooterSection,
+    CollabIcon,
+    GrowthIcon,
+    InnovationIcon,
+    CommunicationIcon,
   }
 }
 </script>
@@ -178,13 +222,13 @@ export default {
     }
 
     .hero {
-        background-image: url("../images/hero-background.png");
+        background-image: url("../images/hero-bg.svg");
         background-size: cover;
         
         height:100vh;
         width:100%;
         padding: $sp-36 $sp-80;
-        margin-top: $sp-64;
+        margin-top: $sp-40;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -228,7 +272,7 @@ export default {
     }
 
     .mission{
-        background-image: url("../images/mission-bg.png");
+        background-image: url("../images/mission-bg.svg");
         background-size: cover;
         height:100;
         width:100%;
@@ -314,17 +358,17 @@ export default {
         > ul {
             display: grid;
             list-style-type: none;
-            grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             grid-gap: 2rem;
 
-            li img{
-                display:block;
-                height: calc(100vw * 0.1);
-                width: calc(100vw * 0.1);
+            li {
+                padding: 0;
             }
 
+
             h3 {
-            font-size:$sp-32;
+            font-size:$sp-28;
             text-transform: uppercase;
             color:$accent;
             text-align: center;
@@ -336,20 +380,74 @@ export default {
             }
 
             p {
-                font-size: $sp-20;
+                margin-top: $sp-8;
+                font-size: $sp-16;
                 font-style: normal;
                 font-weight: 400;
+                color: $secondary;
                 line-height: 150%;
-                letter-spacing: -1px;
+                letter-spacing: -0.1px;
                 text-align: center;
-
-                @media #{$tablet} {
-                font-size:$sp-16;
-                }
             }
         }
 
         
+    }
+
+    .join {
+        background-image: url("../images/join-bg.svg");
+        background-size: cover;
+        
+        height:100;
+        width:100%;
+        padding: $sp-36 0 0 $sp-80;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+        &__left{
+            max-width:600px;
+            letter-spacing: -0.1px;
+
+            @media #{$tablet} {
+                max-width:400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &__right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left:$sp-20;
+
+            @media #{$tablet} {
+                margin-left: 0;
+            }
+        }
+
+        &__right img{
+            position: relative;
+            right: -52px;
+            height: calc(100vw * 0.27);
+            width: calc(100vw * 0.48);
+            vertical-align: middle;
+
+            @media #{$tablet} {
+                right: 0;
+                height: calc(100vw * 0.56);
+                width: calc(100vw * 0.98);
+            }
+        }
+
+        @media #{$tablet} {
+            padding: 120px $sp-8 0 $sp-8;
+        }
+
     }
 
     section {
@@ -358,7 +456,7 @@ export default {
             background-color: $accent;
             padding: 12px 24px !important;
             color: $white;
-            margin-top:$sp-48;
+            margin: 16px 0;
             border-radius:64px;
             height: 48px;
             width:148px;
@@ -386,18 +484,16 @@ export default {
                 background-color: #0374C7;
                 color: $white;
             }
-
             
-        }
-
-        p {
-            font-size: 20px;
-            line-height: 150%;
-            color: $secondary;
         }
 
         .white {
             color:$white;
+        }
+
+        .reverse {
+            background: $white;
+            color: $accent;
         }
 
         @media #{$tablet} {
@@ -411,7 +507,7 @@ export default {
             justify-content: center;
 
             @media #{$tablet} {
-                display: block;
+                @include flex-align-center(column);
             }
         }
     }

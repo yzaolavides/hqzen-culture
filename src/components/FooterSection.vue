@@ -72,6 +72,10 @@
                                 <span class="t-copy--footer">Release Notes</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+                            <br>
+                        </li>
                     </ul>
                 </section>
             </div>
