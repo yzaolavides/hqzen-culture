@@ -93,8 +93,75 @@
         </ul>
 
       </section>
-      <section class="team">
+      <section class="perks">
+        <div class="perks__header">
+            <p class="section__subtitle">Our perks</p>
+            <h1 class="section__title">
+                Empowering the Team
+            </h1>
+            <p class="section__copy">
+                We ensure team members feel valued and supported 
+                in their personal and professional lives.
+            </p>
+        </div>
 
+        <ul>
+            <li>
+                <FlexIcon />
+                <h3>Flexible Schedule</h3>
+                <p>
+                    The team can choose their preferred working hours, 
+                    as long as they fulfill 40 hours of work in a week.
+                </p>
+            </li>
+
+            <li>
+                <span class="perks__icon">
+                    <TeamIcon />
+                </span>
+                <h3>Team-based Structure</h3>
+                <p>
+                    There is no seniority here, everyone is encouraged 
+                    to share their thoughts and concerns.
+                </p>
+            </li>
+
+            <li>
+                <UpskillIcon />
+                <h3>Upskilling Programs</h3>
+                <p>
+                    Everyone is encouraged to learn new skills, and is given 
+                    access to e-learning platforms whenever they choose.
+                </p>
+            </li>
+
+            <li>
+                <PartTimeIcon />
+                <h3>Part Time Off</h3>
+                <p>
+                    Aside from the usual PTO, various leaves are granted such 
+                    as Maternity/Paternity Leave, Special Leave for Women, etc.
+                </p>
+            </li>
+
+            <li>
+                <HybridIcon />
+                <h3>Hybrid Arrangement</h3>
+                <p>
+                    If anyone feels unwell or is challenged by natural 
+                    elements, they are free to work from home.
+                </p>
+            </li>
+
+            <li>
+                <TeamEventsIcon />
+                <h3>Team Events</h3>
+                <p>
+                    Various activities such as Variety Nights or Movie Nights 
+                    are organized to help the team unwind.
+                </p>
+            </li>
+        </ul>
       </section>
 
       <section class="join">
@@ -136,6 +203,12 @@ import CollabIcon from '../components/LottieIcons/CollaborationIcon.vue'
 import GrowthIcon from '../components/LottieIcons/GrowthIcon.vue'
 import InnovationIcon from '../components/LottieIcons/InnovationIcon.vue'
 import CommunicationIcon from '../components/LottieIcons/CommunicationIcon.vue'
+import FlexIcon from '../components/LottieIcons/FlexIcon.vue'
+import TeamIcon from '../components/LottieIcons/TeamIcon.vue'
+import UpskillIcon from '../components/LottieIcons/UpskillIcon.vue'
+import PartTimeIcon from '../components/LottieIcons/PartTimeIcon.vue'
+import HybridIcon from '../components/LottieIcons/HybridIcon.vue'
+import TeamEventsIcon from '../components/LottieIcons/TeamEventsIcon.vue'
 
 
 export default {
@@ -146,6 +219,12 @@ export default {
     GrowthIcon,
     InnovationIcon,
     CommunicationIcon,
+    FlexIcon,
+    TeamIcon,
+    UpskillIcon,
+    PartTimeIcon,
+    HybridIcon,
+    TeamEventsIcon,
   }
 }
 </script>
@@ -390,8 +469,74 @@ export default {
                 text-align: center;
             }
         }
+    }
 
+    .perks {
+        background-color: $accent-container;
+        height: 100%;
+        width: 100%;
+        padding: $sp-80;
+        justify-content: space-between;
+        align-items: center;
         
+
+        &__header{
+            text-align: center;
+            margin-bottom: $sp-40;
+
+            @media #{$tablet} {
+                margin: $sp-28;
+            }
+        }
+
+        &__icon {
+            margin: 0px;
+        }
+
+        > ul {
+            display: grid;
+            list-style-type: none;
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 4rem;
+
+            li {
+                padding: $sp-20;
+                border-radius: $sp-12;
+                background: $white;
+            }
+
+            h3 {
+            font-size:$sp-28;
+            text-transform: capitalize;
+            color:$secondary;
+            font-weight: 600;
+
+                @media #{$tablet} {
+                font-size:$sp-20;
+                }
+            }
+
+            p {
+                margin-top: $sp-12;
+                font-size: $sp-16;
+                font-style: normal;
+                font-weight: 400;
+                color: $secondary;
+                line-height: 150%;
+                letter-spacing: -0.1px;
+            }
+
+            @media #{$tablet} {
+                grid-gap: 2rem;
+                margin: $sp-32;
+            }
+        }
+
+        @media #{$tablet} {
+            text-align: center;
+            padding: $sp-40 0;
+        }
     }
 
     .join {
@@ -432,7 +577,7 @@ export default {
 
         &__right img{
             position: relative;
-            right: -52px;
+            right: -8px;
             height: calc(100vw * 0.27);
             width: calc(100vw * 0.48);
             vertical-align: middle;
