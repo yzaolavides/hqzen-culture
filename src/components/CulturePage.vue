@@ -1374,6 +1374,7 @@ export default {
                 padding: $sp-20;
                 border-radius: $sp-12;
                 background: $white;
+                text-align: center;
             }
 
             h3 {
