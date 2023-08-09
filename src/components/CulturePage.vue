@@ -766,7 +766,6 @@
             </div>
         </div>
       </section>
-
       <section class="perks">
         <div class="perks__header">
             <p class="section__subtitle">Our perks</p>
@@ -837,7 +836,52 @@
             </li>
         </ul>
       </section>
-
+      <section class="culture">
+        <div class="culture__left">
+            <div class="slider">
+                <img 
+                    id="slide-1" 
+                    src="../images/culture/1.jpg"
+                    alt="Four people gathered together, with one writing on a whiteboard"
+                />
+                <img 
+                    id="slide-2" 
+                    src="../images/culture/2.jpg"
+                    alt="A guy (Sir Luke, our QA Team Lead) laughing"
+                />
+                <img 
+                    id="slide-3" 
+                    src="../images/culture/3.jpg"
+                    alt="Three members of the HQZen development team thinking and smiling"
+                />
+                <img 
+                    id="slide-4" 
+                    src="../images/culture/4.jpg"
+                    alt="One of our designers (Maggie) holding a ball, while talking"
+                />
+                <img 
+                    id="slide-5" 
+                    src="../images/culture/5.jpg"
+                    alt="The design team playing charades"
+                />
+                
+            </div>
+            
+        </div>
+        <div class="culture__right">
+            <p class="section__subtitle">
+                Our Culture
+            </p>
+            <h1 class="section__title reverse">
+                Working at HQZen
+            </h1>
+            <p class="section__copy">
+                Newcomers will find a friendly, relaxed setting 
+                that encourages collaboration and learning, creating 
+                a supportive and fulfilling environment for everyone.
+            </p>
+        </div>
+      </section>
       <section class="join">
         <div class="wrapper">
             <div class="join__left">
@@ -902,8 +946,6 @@ export default {
   }
 }
 </script>
-
-
 
 <style lang="scss" scoped>
   @import "../scss/index";
@@ -1211,11 +1253,13 @@ export default {
         }
         
     }
+
     .team-slider {
-        padding: 0 0 $sp-40 0;
+        padding: 0 0 $sp-80 0;
+
         > .slider {
                 height: 76px;
-                margin: 0 0 $sp-12 0;
+                margin: 0;
                 position: relative;
                 display: grid;
                 overflow: hidden;
@@ -1334,6 +1378,79 @@ export default {
         @media #{$tablet} {
             text-align: center;
             padding: $sp-40 0;
+        }
+    }
+
+    .culture {
+        background: $white;
+        height:100%;
+        width:100%;
+        padding: $sp-80;
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+
+        &__left {
+            width: 100vmin;
+            overflow: hidden;
+            
+
+            .slider {
+                width: 100%;
+                display: flex;
+                animation: slide 16s infinite;
+
+                @keyframes slide {
+                    0%{
+                        transform: translateX(0);
+                    }
+                    25%{
+                        transform: translateX(0);
+                    }
+                    30%{
+                        transform: translateX(-100%);
+                    }
+                    50%{
+                        transform: translateX(-100%);
+                    }
+                    55%{
+                        transform: translateX(-200%);
+                    }
+                    75%{
+                        transform: translateX(-200%);
+                    }
+                    80%{
+                        transform: translateX(-300%);
+                    }
+                    100%{
+                        transform: translateX(-300%);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+            @media #{$tablet} {
+                width: 100%;
+            }
+        }
+
+        &__right {
+            max-width: 388px;
+
+            @media #{$tablet} {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media #{$tablet} {
+            padding: $sp-40;
+            flex-direction: column-reverse;
         }
     }
 
