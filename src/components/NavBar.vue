@@ -29,7 +29,7 @@
                             href="https://yzaolavides.github.io/hqzen-culture"
                             class="medium semibold"
                         >
-                            Culture
+                            About
                         </a>
                     </li>
                     <li>
@@ -186,7 +186,7 @@
                 <ul>
                     <li>
                         <a
-                            href="https://hqzen.com/"
+                            href="/"
                             class="medium semibold"
                         >
                             Home
@@ -194,7 +194,7 @@
                     </li>
                     <li>
                         <a
-                            href="https://yzaolavides.github.io/hqzen-culture"
+                            href="/"
                             class="medium semibold"
                         >
                             Culture
@@ -202,7 +202,7 @@
                     </li>
                     <li>
                         <a
-                            href="https://hqzen.com/job-postings/"
+                            href="/"
                             class="medium semibold"
                         >
                             Look for Jobs
@@ -223,7 +223,7 @@
                             class="list"
                             :class="{'show': toggleProductList}"
                         >
-                            <a href="https://hqzen.com/release-notes">
+                            <a href="/">
                                 <div class="list__item">
                                     <p class="p-h3">
                                         Desktop Application
@@ -241,7 +241,7 @@
                                 </div>
                             </a>
                             <a
-                                href="https://play.google.com/store/apps/details?id=com.bposeats.applybpo"
+                                href="/"
                                 target="__blank"
                             >
                                 <div class="list__item">
@@ -277,7 +277,7 @@
                             class="list"
                             :class="{'show': toggleHelpList}"
                         >
-                            <a href="https://hqzen.com/concerns">
+                            <a href="/">
                                 <div class="list__item">
                                     <p class="p-h3">
                                         Concerns
@@ -293,7 +293,7 @@
                                     >
                                 </div>
                             </a>
-                            <a href="https://hqzen.com/help-center/">
+                            <a href="/">
                                 <div class="list__item">
                                     <p class="p-h3">
                                         Help Center
@@ -316,12 +316,12 @@
                     </li>
                     <template v-if="!isLoggedIn">
                         <li class="medimum semibold">
-                            <a :href="{name: 'get-started'}">
+                            <a href="/">
                                 Get Started
                             </a>
                         </li>
                         <li class="medimum semibold">
-                            <a :href="{name: 'signin'}">
+                            <a href="/">
                                 Sign in
                             </a>
                         </li>

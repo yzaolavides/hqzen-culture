@@ -87,7 +87,6 @@
             </li>
         </ul>
       </section>
-
       <section class="team">
         <div class="team__header">
             <p class="section__subtitle">Our team</p>
@@ -882,6 +881,31 @@
             </p>
         </div>
       </section>
+      <section class="career">
+        <div class="career__left">
+            <p class="section__subtitle">
+                Our Career Growth Initiatives
+            </p>
+            <h3 class="section__title">
+                Here to help 
+                <span class="emphasis">
+                    you
+                </span> 
+                grow
+            </h3>
+            <p class="section__copy">
+                We offer internship programs, providing aspiring individuals 
+                with valuable hands-on experience in the tech industry and 
+                introducing them to our tech stack.
+            </p>
+        </div>
+        <div class="career__right">
+            <img 
+                src="../images/cloud.svg"
+                alt="HQZen Tech Cloud"
+            />
+        </div>
+      </section>
       <section class="join">
         <div class="wrapper">
             <div class="join__left">
@@ -985,17 +1009,21 @@ export default {
                     margin-bottom: 16px;
                 }
 
-                & > .emphasis {
+                .emphasis {
                 color: $accent;
                 font-weight: 800;
                 font-size: $sp-52;
                 margin-bottom: 24px;
-                @media #{$tablet} {
-                    font-size: $sp-28;
-                    text-align: center;
-                    margin-bottom: 16px;
-                }
-
+                    @media #{$tablet} {
+                        font-size: $sp-28;
+                        text-align: center;
+                        margin-bottom: 16px;
+                    }
+                    img {
+                        position: absolute;
+                        left: 40px;
+                        top: 1400px;
+                    }
                 }
             }
 
@@ -1386,13 +1414,13 @@ export default {
         height:100%;
         width:100%;
         padding: $sp-80;
-        display: flex;
-        
+        display: flex;  
         align-items: center;
         justify-content: space-between;
 
         &__left {
             width: 100vmin;
+            margin: $sp-12;
             overflow: hidden;
             
 
@@ -1434,6 +1462,7 @@ export default {
             }
             @media #{$tablet} {
                 width: 100%;
+                margin: 0;
             }
         }
 
@@ -1451,6 +1480,45 @@ export default {
         @media #{$tablet} {
             padding: $sp-40;
             flex-direction: column-reverse;
+        }
+    }
+
+    .career {
+        background: $white;
+        height:100%;
+        width:100%;
+        padding: $sp-80;
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+
+        &__left {
+            max-width: 400px;
+        }
+
+        &__right {
+            width: 100%;
+            margin: $sp-12;
+            padding:$sp-12;
+
+            img {
+                width: 100%;
+            }
+
+            @media #{$tablet} {
+                width: 100%;
+                display: flex;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+         @media #{$tablet} {
+            flex-direction: column;
+            @include flex-align-center(column);
+            padding: $sp-40;
         }
     }
 
