@@ -66,11 +66,6 @@
         
         <ul>
             <li> 
-                <!-- <img
-                    src="../images/collaboration.gif"
-                    alt="Collaboration"
-                    class="collab-image"
-                > -->
                 <CollabIcon />
                 <h3>Collaboration</h3>
                 <p>Be open to everyone’s thoughts and ideas.</p>
@@ -91,8 +86,687 @@
                 <p>Proactive sharing ensures informed decisions.</p>
             </li>
         </ul>
-
       </section>
+
+      <section class="team">
+        <div class="team__header">
+            <p class="section__subtitle">Our team</p>
+            <h1 class="section__title">
+                People Behind the Tech
+            </h1>
+            <p class="section__copy">
+                Our diverse team is a blend of tech wizards, creative thinkers, and problem-solving maestros. 
+                <br>Together, we innovate to redefine the way the BPO industry work and operate.
+            </p>
+        </div>
+        <ul>
+            <li>
+                <figure>
+                    <figcaption>
+                        <h3>Developers</h3>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        <h3>Designers</h3>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        <h3>QA Testers</h3>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+
+        <div class="section__copy reverse blurb">
+            We built a vibrant community of amazing teams and talented individuals, 
+            spanning across multiple countries.
+        </div>
+      </section>
+      <section class="team-slider">
+        <!-- ROW 1 -->
+        <div class="slider">
+            <div class="row">
+                <div class="avatar">
+                    <img src="../images/avatars/row1/1.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/2.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/3.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/4.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/5.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/6.png" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/7.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/8.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/9.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/10.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/11.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/12.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/13.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/14.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/15.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/16.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/17.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/18.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/19.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/20.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/21.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/22.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/23.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/24.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/25.jpeg" />
+                </div>
+
+                <!-- DUPLICATE -->
+
+                <div class="avatar">
+                    <img src="../images/avatars/row1/1.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/2.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/3.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/4.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/5.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/6.png" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/7.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/8.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/9.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/10.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/11.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/12.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/13.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/14.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/15.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/16.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/17.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/18.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/19.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/20.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/21.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/22.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/23.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/24.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row1/25.jpeg" />
+                </div>
+
+            </div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="slider">
+            <div class="row delay">
+                <div class="avatar">
+                    <img src="../images/avatars/row2/26.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/27.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/28.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/29.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/30.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/31.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/32.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/33.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/34.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/35.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/36.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/37.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/38.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/39.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/40.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/41.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/42.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/43.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/44.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/45.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/46.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/47.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/48.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/49.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/50.jpeg" />
+                </div>
+
+                <!-- DUPLICATE -->
+
+                <div class="avatar">
+                    <img src="../images/avatars/row2/26.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/27.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/28.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/29.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/30.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/31.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/32.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/33.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/34.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/35.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/36.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/37.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/38.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/39.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/40.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/41.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/42.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/43.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/44.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/45.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/46.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/47.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/48.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/49.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row2/50.jpeg" />
+                </div>
+
+            </div>
+        </div>
+        <!-- ROW 3 -->
+        <div class="slider">
+            <div class="row">
+                <div class="avatar">
+                    <img src="../images/avatars/row3/51.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/52.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/53.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/54.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/55.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/56.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/57.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/58.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/59.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/60.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/61.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/62.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/63.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/64.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/65.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/66.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/67.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/68.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/69.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/70.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/71.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/72.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/73.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/74.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/75.jpeg" />
+                </div>
+
+                <!-- DUPLICATE -->
+
+                <div class="avatar">
+                    <img src="../images/avatars/row3/51.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/52.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/53.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/54.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/55.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/56.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/57.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/58.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/59.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/60.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/61.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/62.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/63.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/64.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/65.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/66.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/67.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/68.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/69.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/70.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/71.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/72.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/73.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/74.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row3/75.jpeg" />
+                </div>
+
+            </div>
+        </div>
+        <!-- ROW 4 -->
+        <div class="slider">
+            <div class="row delay">
+                <div class="avatar">
+                    <img src="../images/avatars/row4/76.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/77.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/78.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/79.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/80.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/81.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/82.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/83.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/84.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/85.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/86.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/87.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/88.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/89.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/90.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/91.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/92.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/93.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/94.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/95.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/96.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/97.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/98.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/99.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/100.jpeg" />
+                </div>
+
+                <!-- DUPLICATE -->
+
+                <div class="avatar">
+                    <img src="../images/avatars/row4/76.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/77.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/78.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/79.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/80.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/81.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/82.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/83.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/84.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/85.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/86.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/87.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/88.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/89.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/90.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/91.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/92.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/93.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/94.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/95.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/96.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/97.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/98.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/99.jpeg" />
+                </div>
+                <div class="avatar">
+                    <img src="../images/avatars/row4/100.jpeg" />
+                </div>
+
+            </div>
+        </div>
+      </section>
+
       <section class="perks">
         <div class="perks__header">
             <p class="section__subtitle">Our perks</p>
@@ -471,6 +1145,131 @@ export default {
         }
     }
 
+    .team {
+        height: 100%;
+        width: 100%;
+        padding: $sp-80 $sp-40 $sp-20 $sp-40;
+        justify-content: space-between;
+        align-items: center;
+
+        &__header{
+            text-align: center;
+            margin-bottom: $sp-40;
+
+            @media #{$tablet} {
+                > .section__copy br {
+                    display: none;
+                }
+            }
+        }
+
+        > ul {
+            display: grid;
+            list-style-type: none;
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-gap: 1rem;
+
+            li {
+                height: 400px;
+                padding: $sp-20;
+                border-radius: $sp-12;
+                background: $secondary;
+                background: linear-gradient(0deg, $accent 0%, $quaternary 100%);
+
+                > figure > figcaption { 
+                    position: relative;
+                    top: 312px;
+                    // background-color: rgba(0,0,0,.7);
+                    // width: 100%;
+
+                    > h3 {
+                        font-size: $sp-36;
+                        font-weight: 800;
+                        color: $white;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+
+                        @media #{$tablet} {
+                            font-size: $sp-24;
+                        }
+                    }
+                }
+            }
+
+        @media #{$tablet} {
+            grid-gap: 2rem;
+            }
+
+        }
+
+        > .blurb {
+            margin: $sp-40 0;
+            font-size: $sp-20;
+            font-weight: 700;
+            line-height: 150%;
+            text-align: center;
+        }
+        
+    }
+    .team-slider {
+        padding: 0 0 $sp-40 0;
+        > .slider {
+                height: 76px;
+                margin: 0 0 $sp-12 0;
+                position: relative;
+                display: grid;
+                overflow: hidden;
+                > .row {
+                    display: flex;
+                    width: calc(76px * 50);
+                    animation: scroll 92s linear infinite;
+
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        100% {
+                            transform: translateX(calc(-76px * 25));
+                        }
+                    }
+
+                    > .avatar {
+                        height: 76px;
+                        width: 76px;
+                        display: flex;
+                        border-radius: 12px;
+                        align-items: center;
+                        padding: 4px;
+                        perspective: 100px;
+                    }
+                }
+
+                .row:hover {
+                    animation-play-state: paused;
+                }
+
+                > .delay {
+                    animation-delay: 1600ms;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                }
+
+                img:hover {
+                    transform: translateZ(20px);
+                }
+        }
+
+        @media #{$tablet} {
+            padding: 0 0 $sp-40 0;
+        }
+        
+    }
+
     .perks {
         background-color: $accent-container;
         height: 100%;
@@ -478,7 +1277,6 @@ export default {
         padding: $sp-80;
         justify-content: space-between;
         align-items: center;
-        
 
         &__header{
             text-align: center;
@@ -542,8 +1340,7 @@ export default {
     .join {
         background-image: url("../images/join-bg.svg");
         background-size: cover;
-        
-        height:100;
+        height:100%;
         width:100%;
         padding: $sp-36 0 0 $sp-80;
         display: flex;
@@ -577,7 +1374,7 @@ export default {
 
         &__right img{
             position: relative;
-            right: -8px;
+            right: 0;
             height: calc(100vw * 0.27);
             width: calc(100vw * 0.48);
             vertical-align: middle;
@@ -592,11 +1389,9 @@ export default {
         @media #{$tablet} {
             padding: 120px $sp-8 0 $sp-8;
         }
-
     }
 
     section {
-
         .action {
             background-color: $accent;
             padding: 12px 24px !important;
@@ -629,7 +1424,6 @@ export default {
                 background-color: #0374C7;
                 color: $white;
             }
-            
         }
 
         .white {
