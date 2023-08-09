@@ -1268,7 +1268,7 @@ export default {
 
         @media #{$tablet} {
             grid-gap: 2rem;
-            }
+        }
 
         }
 
