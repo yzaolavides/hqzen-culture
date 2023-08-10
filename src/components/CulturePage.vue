@@ -76,13 +76,13 @@
                 <p>Cultivate a culture of continuous learning.</p>
             </li>
             <li>
-                <InnovationIcon />
-                <h3>Innovation</h3>
-                <p>Foster a future-focused mindset.</p>
+                <OwnershipIcon />
+                <h3>Ownership</h3>
+                <p>Be accountable for one’s actions and responsibilities.</p>
             </li>
             <li>
                 <CommunicationIcon />
-                <h3>Collaboration</h3>
+                <h3>Communication</h3>
                 <p>Proactive sharing ensures informed decisions.</p>
             </li>
         </ul>
@@ -939,7 +939,7 @@
 import FooterSection from './FooterSection.vue'
 import CollabIcon from '../components/LottieIcons/CollaborationIcon.vue'
 import GrowthIcon from '../components/LottieIcons/GrowthIcon.vue'
-import InnovationIcon from '../components/LottieIcons/InnovationIcon.vue'
+import OwnershipIcon from '../components/LottieIcons/OwnershipIcon.vue'
 import CommunicationIcon from '../components/LottieIcons/CommunicationIcon.vue'
 import FlexIcon from '../components/LottieIcons/FlexIcon.vue'
 import TeamIcon from '../components/LottieIcons/TeamIcon.vue'
@@ -947,23 +947,39 @@ import UpskillIcon from '../components/LottieIcons/UpskillIcon.vue'
 import PartTimeIcon from '../components/LottieIcons/PartTimeIcon.vue'
 import HybridIcon from '../components/LottieIcons/HybridIcon.vue'
 import TeamEventsIcon from '../components/LottieIcons/TeamEventsIcon.vue'
-
+import Swiper from 'swiper';
 
 export default {
   name: 'CulturePage',
   components: {
-    FooterSection,
-    CollabIcon,
-    GrowthIcon,
-    InnovationIcon,
-    CommunicationIcon,
-    FlexIcon,
-    TeamIcon,
-    UpskillIcon,
-    PartTimeIcon,
-    HybridIcon,
-    TeamEventsIcon,
-  }
+        FooterSection,
+        CollabIcon,
+        GrowthIcon,
+        OwnershipIcon,
+        CommunicationIcon,
+        FlexIcon,
+        TeamIcon,
+        UpskillIcon,
+        PartTimeIcon,
+        HybridIcon,
+        TeamEventsIcon,
+    },
+
+    mounted() {
+        new Swiper("#swiper-1", {
+        effect: "fade",
+        autoplay: {
+            delay: 500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: "#swiper-1 .swiper-pagination",
+            clickable: true,
+        },
+        lazyLoading: true,
+        loop: true
+        });
+  },
 }
 </script>
 
@@ -1365,8 +1381,8 @@ export default {
             display: grid;
             list-style-type: none;
             padding: 0;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            grid-gap: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+            grid-gap: 4.5rem;
 
             li {
                 padding: $sp-20;
@@ -1398,7 +1414,7 @@ export default {
 
             @media #{$tablet} {
                 grid-gap: 2rem;
-                margin: $sp-32;
+                margin: $sp-40 $sp-80;
             }
         }
 
@@ -1507,6 +1523,7 @@ export default {
             @media #{$tablet} {
                 width: 100%;
                 display: flex;
+                padding: 0;
 
                 img {
                     width: 100%;
@@ -1620,7 +1637,7 @@ export default {
         }
 
         @media #{$tablet} {
-            gap: 40px;
+            gap: 20px;
             padding: 80px 30px;
         }
 

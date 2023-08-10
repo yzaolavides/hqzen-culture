@@ -29,7 +29,7 @@
                             href="https://yzaolavides.github.io/hqzen-culture"
                             class="medium semibold"
                         >
-                            About
+                            Culture
                         </a>
                     </li>
                     <li>

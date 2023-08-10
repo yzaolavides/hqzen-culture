@@ -10,7 +10,7 @@
 
 <script>
 import Lottie from '../../lottie-vue.vue';
-import * as animationData from '../../assets/collaboration.json';
+import * as animationData from '../../assets/ownership.json';
 
 export default {
   name: 'app',
@@ -28,7 +28,7 @@ export default {
     handleAnimation(anim) {
       this.animation = anim;
       this.animation.setSpeed(0); // Set initial speed to 0
-    }
+    },
   }
 };
 </script>

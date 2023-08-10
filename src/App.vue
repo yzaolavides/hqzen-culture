@@ -10,13 +10,12 @@
 import CulturePage from './components/CulturePage.vue'
 import NavBar from './components/NavBar.vue'
 
-
 export default {
   name: 'App',
   components: {
     CulturePage,
     NavBar,
-  }
+  },
 }
 </script>
 
