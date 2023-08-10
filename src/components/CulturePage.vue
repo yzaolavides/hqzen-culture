@@ -788,9 +788,7 @@
             </li>
 
             <li>
-                <span class="perks__icon">
-                    <TeamIcon />
-                </span>
+                <TeamIcon />
                 <h3>Team-based Structure</h3>
                 <p>
                     There is no seniority here, everyone is encouraged 
@@ -863,9 +861,7 @@
                     src="../images/culture/5.jpg"
                     alt="The design team playing charades"
                 />
-                
             </div>
-            
         </div>
         <div class="culture__right">
             <p class="section__subtitle">
@@ -993,6 +989,7 @@ export default {
             @media #{$tablet} {
                 font-size: 12px;
                 text-align: center;
+                margin-bottom: $sp-20;
             }
         }
       
@@ -1027,7 +1024,6 @@ export default {
                 }
             }
 
-
         &__copy{
             font-weight: 400;
             font-size: $sp-20;
@@ -1051,10 +1047,11 @@ export default {
         height:100vh;
         width:100%;
         padding: $sp-36 $sp-80;
-        margin-top: $sp-40;
+        margin-top: 72px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
 
         &__left{
             max-width:572px;
@@ -1090,7 +1087,8 @@ export default {
         }
 
         @media #{$tablet} {
-            padding:8px 32px;
+            padding: $sp-8 $sp-32;
+            justify-content: space-around;
         }
     }
 
@@ -1285,35 +1283,36 @@ export default {
     .team-slider {
         padding: 0 0 $sp-80 0;
 
-        > .slider {
-                height: 76px;
-                margin: 0;
-                position: relative;
-                display: grid;
-                overflow: hidden;
-                > .row {
-                    display: flex;
-                    width: calc(76px * 50);
-                    animation: scroll 92s linear infinite;
+        .slider {
+            height: 76px;
+            margin: 0;
+            position: relative;
+            display: grid;
+            overflow: hidden;
+            
+            .row {
+                display: flex;
+                width: calc(76px * 50);
+                animation: scroll 92s linear infinite;
 
-                    @keyframes scroll {
-                        0% {
-                            transform: translateX(0);
-                        }
-
-                        100% {
-                            transform: translateX(calc(-76px * 25));
-                        }
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
                     }
 
-                    > .avatar {
-                        height: 76px;
-                        width: 76px;
-                        display: flex;
-                        border-radius: 12px;
-                        align-items: center;
-                        padding: 4px;
-                        perspective: 100px;
+                    100% {
+                        transform: translateX(calc(-76px * 25));
+                    }
+                }
+
+                .avatar {
+                    height: 76px;
+                    width: 76px;
+                    display: flex;
+                    border-radius: 12px;
+                    align-items: center;
+                    padding: 4px;                        
+                    perspective: 100px;
                     }
                 }
 
@@ -1321,7 +1320,7 @@ export default {
                     animation-play-state: paused;
                 }
 
-                > .delay {
+                .delay {
                     animation-delay: 1600ms;
                 }
 
@@ -1339,7 +1338,6 @@ export default {
         @media #{$tablet} {
             padding: 0 0 $sp-40 0;
         }
-        
     }
 
     .perks {
@@ -1363,7 +1361,7 @@ export default {
             margin: 0px;
         }
 
-        > ul {
+        ul {
             display: grid;
             list-style-type: none;
             padding: 0;
@@ -1378,13 +1376,13 @@ export default {
             }
 
             h3 {
-            font-size:$sp-28;
-            text-transform: capitalize;
-            color:$secondary;
-            font-weight: 600;
+                font-size:$sp-28;
+                text-transform: capitalize;
+                color:$secondary;
+                font-weight: 600;
 
                 @media #{$tablet} {
-                font-size:$sp-20;
+                    font-size:$sp-20;
                 }
             }
 
