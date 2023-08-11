@@ -835,6 +835,7 @@
       </section>
       <section class="culture">
         <div class="culture__left">
+            <div class="wrapper">
             <ul class="slides">
                 <input type="radio" name="radio-btn" id="img-1" checked />
                 <li class="slide-container">
@@ -844,6 +845,10 @@
                             src="../images/culture/1.jpg"
                             alt="Four people gathered together, with one writing on a whiteboard"
                         />
+                    </div>
+                    <div class="nav">
+                        <label for="img-6" class="prev"></label>
+                        <label for="img-2" class="next"></label>
                     </div>
                 </li>
 
@@ -856,6 +861,10 @@
                         alt="A guy (Sir Luke, our QA Team Lead) laughing"
                     />
                     </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev"></label>
+                        <label for="img-3" class="next"></label>
+                    </div>
                 </li>
 
                 <input type="radio" name="radio-btn" id="img-3" />
@@ -866,6 +875,10 @@
                         src="../images/culture/3.jpg"
                         alt="Three members of the HQZen development team thinking and smiling"
                     />
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev"></label>
+                        <label for="img-4" class="next"></label>
                     </div>
                 </li>
 
@@ -878,6 +891,10 @@
                         alt="One of our designers (Maggie) holding a ball, while talking"
                     />
                     </div>
+                    <div class="nav">
+                        <label for="img-3" class="prev"></label>
+                        <label for="img-5" class="next"></label>
+                    </div>
                 </li>
 
                 <input type="radio" name="radio-btn" id="img-5" />
@@ -889,6 +906,10 @@
                         alt="The design team playing charades"
                     />
                     </div>
+                    <div class="nav">
+                        <label for="img-4" class="prev"></label>
+                        <label for="img-6" class="next"></label>
+                    </div>
                 </li>
 
                 <li class="nav-dots">
@@ -899,7 +920,7 @@
                 <label for="img-5" class="nav-dot" id="img-dot-5"></label>
                 </li>
             </ul>
-
+            </div>
         </div>
         <div class="culture__right">
             <p class="section__subtitle">
@@ -1484,7 +1505,6 @@ export default {
                 position: relative;
 
                 @media #{$tablet} {
-                    padding: 24px;
                     width: 90%;
                     margin: 0;
                 }
@@ -1528,6 +1548,28 @@ export default {
                 transition: opacity 1s ease-in-out;
             }
 
+            .nav label {
+                width: 100px;
+                height: 100%;
+                display: none;
+                position: absolute;
+
+                opacity: 0;
+                z-index: 9;
+                cursor: pointer;
+
+                transition: opacity .2s;
+
+                background-color: rgba(255, 255, 255, .3);
+                text-shadow: 0px 0px 15px rgb(119, 119, 119);
+            }
+
+            .slide:hover + .nav label { opacity: 0.5; }
+
+            .nav label:hover { opacity: 1; }
+
+            .nav .next { right: 0; }
+
             input:checked + .slide-container .nav label { display: block; }
 
             .nav-dots {
@@ -1539,7 +1581,7 @@ export default {
                 text-align: center;
 
                 @media #{$tablet} {
-                    bottom: 100px;
+                    bottom: calc(100px * 0.9);
                 }
             }
 
@@ -1580,7 +1622,7 @@ export default {
         }
 
         @media #{$tablet} {
-            padding: $sp-40;
+            padding: $sp-40 $sp-20 0 $sp-20;
             flex-direction: column-reverse;
         }
     }
