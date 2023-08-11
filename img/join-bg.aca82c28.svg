@@ -1,0 +1,59 @@
+<svg width="1512" height="570" viewBox="0 0 1512 570" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_836_33242)">
+<rect width="1512" height="570" fill="#008FF5"/>
+<g style="mix-blend-mode:soft-light">
+<rect width="681" height="681" rx="340.5" transform="matrix(-1 0 0 1 1669.5 -19)" fill="#D8E5F8" fill-opacity="0.5"/>
+</g>
+<g style="mix-blend-mode:soft-light">
+<g clip-path="url(#clip1_836_33242)">
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 138.5 12)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 112.5 12)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 86.5 12)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 60.5 12)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 34.5 12)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 8.5 12)" fill="#E1EDF9"/>
+</g>
+<g clip-path="url(#clip2_836_33242)">
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 138.5 38)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 112.5 38)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 86.5 38)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 60.5 38)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 34.5 38)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 8.5 38)" fill="#E1EDF9"/>
+</g>
+<g clip-path="url(#clip3_836_33242)">
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 138.5 64)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 112.5 64)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 86.5 64)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 60.5 64)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 34.5 64)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 8.5 64)" fill="#E1EDF9"/>
+</g>
+<g clip-path="url(#clip4_836_33242)">
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 138.5 90)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 112.5 90)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 86.5 90)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 60.5 90)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 34.5 90)" fill="#E1EDF9"/>
+<rect width="10" height="10" rx="5" transform="matrix(-1 0 0 1 8.5 90)" fill="#E1EDF9"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_836_33242">
+<rect width="1512" height="570" fill="white"/>
+</clipPath>
+<clipPath id="clip1_836_33242">
+<rect width="296" height="10" fill="white" transform="matrix(-1 0 0 1 138.5 12)"/>
+</clipPath>
+<clipPath id="clip2_836_33242">
+<rect width="296" height="10" fill="white" transform="matrix(-1 0 0 1 138.5 38)"/>
+</clipPath>
+<clipPath id="clip3_836_33242">
+<rect width="296" height="10" fill="white" transform="matrix(-1 0 0 1 138.5 64)"/>
+</clipPath>
+<clipPath id="clip4_836_33242">
+<rect width="296" height="10" fill="white" transform="matrix(-1 0 0 1 138.5 90)"/>
+</clipPath>
+</defs>
+</svg>
