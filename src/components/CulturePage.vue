@@ -835,33 +835,71 @@
       </section>
       <section class="culture">
         <div class="culture__left">
-            <div class="slider">
-                <img 
-                    id="slide-1" 
-                    src="../images/culture/1.jpg"
-                    alt="Four people gathered together, with one writing on a whiteboard"
-                />
-                <img 
-                    id="slide-2" 
-                    src="../images/culture/2.jpg"
-                    alt="A guy (Sir Luke, our QA Team Lead) laughing"
-                />
-                <img 
-                    id="slide-3" 
-                    src="../images/culture/3.jpg"
-                    alt="Three members of the HQZen development team thinking and smiling"
-                />
-                <img 
-                    id="slide-4" 
-                    src="../images/culture/4.jpg"
-                    alt="One of our designers (Maggie) holding a ball, while talking"
-                />
-                <img 
-                    id="slide-5" 
-                    src="../images/culture/5.jpg"
-                    alt="The design team playing charades"
-                />
-            </div>
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img 
+                            id="slide-1" 
+                            src="../images/culture/1.jpg"
+                            alt="Four people gathered together, with one writing on a whiteboard"
+                        />
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                    <img 
+                        id="slide-2" 
+                        src="../images/culture/2.jpg"
+                        alt="A guy (Sir Luke, our QA Team Lead) laughing"
+                    />
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+                    <img 
+                        id="slide-3" 
+                        src="../images/culture/3.jpg"
+                        alt="Three members of the HQZen development team thinking and smiling"
+                    />
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-4" />
+                <li class="slide-container">
+                    <div class="slide">
+                    <img 
+                        id="slide-4" 
+                        src="../images/culture/4.jpg"
+                        alt="One of our designers (Maggie) holding a ball, while talking"
+                    />
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-5" />
+                <li class="slide-container">
+                    <div class="slide">
+                    <img 
+                        id="slide-5" 
+                        src="../images/culture/5.jpg"
+                        alt="The design team playing charades"
+                    />
+                    </div>
+                </li>
+
+                <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                </li>
+            </ul>
+
         </div>
         <div class="culture__right">
             <p class="section__subtitle">
@@ -1428,7 +1466,7 @@ export default {
         background: $white;
         height:100%;
         width:100%;
-        padding: $sp-80;
+        padding: $sp-40 $sp-80;
         display: flex;  
         align-items: center;
         justify-content: space-between;
@@ -1436,48 +1474,97 @@ export default {
         &__left {
             width: 100vmin;
             margin: $sp-12;
-            overflow: hidden;
             
+            .slides {
+                padding: 0;
+                width: 609px;
+                height: 420px;
+                display: block;
+                margin: 0 auto;
+                position: relative;
 
-            .slider {
-                width: 100%;
-                display: flex;
-                animation: slide 16s infinite;
-
-                @keyframes slide {
-                    0%{
-                        transform: translateX(0);
-                    }
-                    25%{
-                        transform: translateX(0);
-                    }
-                    30%{
-                        transform: translateX(-100%);
-                    }
-                    50%{
-                        transform: translateX(-100%);
-                    }
-                    55%{
-                        transform: translateX(-200%);
-                    }
-                    75%{
-                        transform: translateX(-200%);
-                    }
-                    80%{
-                        transform: translateX(-300%);
-                    }
-                    100%{
-                        transform: translateX(-300%);
-                    }
-                }
-
-                img {
-                    width: 100%;
+                @media #{$tablet} {
+                    padding: 24px;
+                    width: 90%;
+                    margin: 0;
                 }
             }
-            @media #{$tablet} {
+
+            .slides * {
+                user-select: none;
+                -ms-user-select: none;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+            }
+
+            .slides input { display: none; }
+
+            .slide-container { display: block; }
+
+            .slide {
+                top: 0;
+                opacity: 0;
                 width: 100%;
-                margin: 0;
+                display: block;
+                position: absolute;
+
+                transform: scale(0);
+
+                transition: all .7s ease-in-out;
+            }
+
+            .slide img {
+                width: 100%;
+                height: 100%;
+            }
+
+            input:checked + .slide-container  .slide {
+                opacity: 1;
+
+                transform: scale(1);
+
+                transition: opacity 1s ease-in-out;
+            }
+
+            input:checked + .slide-container .nav label { display: block; }
+
+            .nav-dots {
+                width: 100%;
+                bottom: 9px;
+                height: 11px;
+                display: block;
+                position: absolute;
+                text-align: center;
+
+                @media #{$tablet} {
+                    bottom: 100px;
+                }
+            }
+
+            .nav-dots .nav-dot {
+                bottom: 8px;
+                width: 8px;
+                height: 8px;
+                margin: 0 4px;
+                position: relative;
+                border-radius: 100%;
+                display: inline-block;
+                background-color: $quaternary;
+            }
+
+            .nav-dots .nav-dot:hover {
+                cursor: pointer;
+                background-color: $accent;
+            }
+
+            input#img-1:checked ~ .nav-dots label#img-dot-1,
+            input#img-2:checked ~ .nav-dots label#img-dot-2,
+            input#img-3:checked ~ .nav-dots label#img-dot-3,
+            input#img-4:checked ~ .nav-dots label#img-dot-4,
+            input#img-5:checked ~ .nav-dots label#img-dot-5 {
+                background: $tertiary;
             }
         }
 
@@ -1566,7 +1653,7 @@ export default {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left:$sp-20;
+            margin-left: $sp-20;
 
             @media #{$tablet} {
                 margin-left: 0;
